@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+            <TextView
+                android:id="@+id/bowlerName"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                 android:textIsSelectable="true"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/to"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/strikingBatsmanName"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textIsSelectable="true"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <View style="@style/redLineStyle" />
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow android:id="@+id/tableRow1" >
+
+            <TextView
+                android:id="@+id/extrasText"
+                android:layout_weight="1"
+                android:text="@string/extras" />
+
+            <TextView
+                android:id="@+id/extrasText1"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="@string/runs" />
+        </TableRow>
+
+        <View style="@style/redLineStyle" />
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/radiogroup1"
+                android:layout_weight="1" >
+
+                <RadioButton
+                    android:id="@+id/wideRadioButton"
+                    android:text="@string/wide" />
+
+                <RadioButton
+                    android:id="@+id/noBallExtraRadioButton"
+                    android:text="@string/noBallExtra" />
+                
+                <RadioButton
+                    android:id="@+id/noBallRunRadioButton"
+                    android:text="@string/noBallRun" />
+
+                <RadioButton
+                    android:id="@+id/byeRadioButton"
+                    android:text="@string/bye" />
+
+                <RadioButton
+                    android:id="@+id/legByeRadioButton"
+                    android:text="@string/legBye" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radiogroup2"
+                android:layout_column="1"
+                android:layout_weight="1" >
+
+                <RadioButton
+                    android:id="@+id/oneRun"
+                    android:text="@string/one" />
+
+                <RadioButton
+                    android:id="@+id/twoRuns"
+                    android:text="@string/two" />
+
+                <RadioButton
+                    android:id="@+id/threeRuns"
+                    android:text="@string/three" />
+
+                <RadioButton
+                    android:id="@+id/fourRuns"
+                    android:text="@string/four" />
+
+                <RadioButton
+                    android:id="@+id/fiveRuns"
+                    android:text="@string/five" />
+
+                <RadioButton
+                    android:id="@+id/sixRuns"
+                    android:layout_height="match_parent"
+                    android:text="@string/six" />
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+
+    <View style="@style/redLineStyle.Bottom" />
+
+    <LinearLayout style="@style/buttonBarLayoutStyle" >
+        <Button style="@style/buttonStyle.Clear03"  android:id="@+id/clearButton"/>
+        <Button style="@style/buttonStyle.Cancel03" />
+        <Button style="@style/buttonStyle.Done03" />
+        <Button style="@style/buttonStyle.Wicket03" android:id="@+id/wicketButton"/>
+    </LinearLayout>
+
+</LinearLayout>

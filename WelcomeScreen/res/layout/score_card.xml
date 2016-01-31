@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <TableLayout
+        android:id="@+id/batsmanTableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/batsmanHeadings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/batsmanNameHeading"
+                android:text="@string/name_underline"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsmanRunsHeading"
+                android:gravity="center"
+                android:text="@string/runsShortLabel"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsmanStrikeRateHeading"
+                android:gravity="center"
+                android:text="@string/battingStrikeRate"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsmanBallsHeading"
+                android:gravity="center"
+                android:text="@string/balls"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsmanFourHeading"
+                android:gravity="center"
+                android:text="@string/fourHeader"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsmanSixHeading"
+                android:gravity="center"
+                android:text="@string/sixHeader"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <View style="@style/redLineStyle" />
+
+    <!-- Team totals -->
+
+    <TableLayout
+        android:id="@+id/teamTotalsTableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/bowlerTitleRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/extrasAndTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="7"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+
+        <View style="@style/redLineStyle" />
+
+        <!-- 1 row for X total for Y wickets in Z overs -->
+
+        <TableRow
+            android:id="@+id/extras1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/runsFromWides"
+                android:layout_column="0"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/runsFromNoBalls"
+                android:layout_column="1"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+            
+              <TextView
+                android:id="@+id/runsFromLegByes"
+                android:layout_column="0"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/runsFromByes"
+                android:layout_column="1"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/runsBreakDown1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/dots"
+                android:layout_column="0"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+          
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/runsBreakDown2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+              <TextView
+                android:id="@+id/ones"
+                android:layout_column="0"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/twos"
+                android:layout_column="1"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/threes"
+                android:layout_column="2"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/fours"
+                android:layout_column="3"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/fives"
+                android:layout_column="4"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/sixes"
+                android:layout_column="5"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <View style="@style/redLineStyle" />
+
+    <!-- Bowling team -->
+
+    <TableLayout
+        android:id="@+id/bowlerTableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/bowlerHeadings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/bowlerNameHeading"
+                android:text="@string/name_underline"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerOversHeading"
+                android:gravity="center"
+                android:text="@string/overs"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlermaidensHeading"
+                android:gravity="center"
+                android:text="@string/maidens"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerRunsHeading"
+                android:gravity="center"
+                android:text="@string/runsShortLabel"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerWicketsHeading"
+                android:gravity="center"
+                android:text="@string/wickets"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerEconomyHeading"
+                android:gravity="center"
+                android:text="@string/economy"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerFourHeading"
+                android:gravity="center"
+                android:text="@string/fourHeader"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerSixHeading"
+                android:gravity="center"
+                android:text="@string/sixHeader"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerWideHeading"
+                android:gravity="center"
+                android:text="@string/wideShortLabel"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerNoBallHeading"
+                android:gravity="center"
+                android:text="@string/noballShortLabel"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <View style="@style/redLineStyle" />
+    
+    
+     <TableLayout
+        android:id="@+id/teamTotalsTableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/bowlingExtras1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/totalWides"
+                android:layout_column="0"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/totalNoBalls"
+                android:layout_column="1"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/bowlingExtras2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/totalLegByes"
+                android:layout_column="0"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/totalByes"
+                android:layout_column="1"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+    
+	<View style="@style/redLineStyle" />
+	
+    <LinearLayout style="@style/buttonBarLayoutStyle" >
+        <Button style="@style/buttonStyle.Done" />
+    </LinearLayout>
+
+</LinearLayout>

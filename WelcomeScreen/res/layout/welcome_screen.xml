@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wojtek"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/gameSettingsLabel"
+        style="@style/genericLabelStyle"
+        android:text="@string/gameSettings" >
+    </TextView>
+    
+    <View style="@style/redLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/gameSettingsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/gameTypeRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/twentyTwenty"
+                android:text="@string/twentyTwenty" />
+
+            <RadioButton
+                android:id="@+id/fortyForty"
+                android:text="@string/fortyForty" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/customSettingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:onClick="onCustomSettings"
+            android:text="@string/customSettings" >
+        </Button>
+    </LinearLayout>
+
+    <View style="@style/redLineStyle" />
+
+    <TextView
+        android:id="@+id/team1Label"
+        style="@style/teamLabelStyle"
+        android:clickable="true"
+        android:onClick="onCreateTeam"
+        android:text="@string/click_to_add_team_1" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/vsLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="20dip"
+        android:text="@string/vs" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/team2Label"
+        style="@style/teamLabelStyle"
+        android:clickable="true"
+        android:onClick="onCreateTeam"
+        android:text="@string/click_to_add_team_2" >
+    </TextView>
+
+    <View style="@style/redLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/batsmanTableHeaderLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/battingTeamLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/battingTeam" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/battingTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <View style="@style/redLineStyle" />
+
+    <TextView
+        android:id="@+id/selectOpenersLabel"
+        style="@style/genericLabelStyle"
+        android:text="@string/select_openers" >
+    </TextView>
+
+    <View style="@style/redLineStyle" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/genericLabelStylePadded"
+            android:layout_weight="0.5"
+            android:text="@string/first_batsman" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/firstBatsmanSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:prompt="@string/battingTeam" >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/genericLabelStylePadded"
+            android:layout_weight="0.5"
+            android:text="@string/second_batsman" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/secondBatsmanSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:prompt="@string/battingTeam" >
+        </Spinner>
+    </LinearLayout>
+
+    <View style="@style/redLineStyle.Bottom" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onStart"
+        android:text="@string/start" >
+    </Button>
+    
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onExit"
+        android:text="@string/exit" >
+    </Button>
+
+</LinearLayout>

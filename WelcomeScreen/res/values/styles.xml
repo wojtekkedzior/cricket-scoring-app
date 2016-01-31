@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="teamLabelStyle" parent="android:Widget.TextView">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    
+    <style name="genericLabelStylePadded" parent="android:Widget.TextView">
+        <item name="android:gravity">left</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+       <style name="genericLabelStyle" parent="android:Widget.TextView">
+        <item name="android:gravity">left</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="redLineStyle" parent="android:Widget.TextView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2dip</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">#FF0000</item>
+    </style>
+
+    <style name="redLineStyle.Bottom">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2dip</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">#FF0000</item>
+    </style>
+
+    <style name="buttonBarLayoutStyle">
+        <item name="android:id">@+id/overSummaryLayout</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="buttonStyle" parent="android:Theme.Holo.Dialog.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="buttonStyle.Done">
+        <item name="android:id">@+id/doneButton</item>
+        <item name="android:text">@string/done</item>
+        <item name="android:onClick">onDone</item>
+        <item name="android:layout_weight">0.5</item>
+    </style>
+
+    <style name="buttonStyle.Cancel">
+        <item name="android:id">@+id/cancelButton</item>
+        <item name="android:text">@string/cancel</item>
+         <item name="android:onClick">onCancel</item>
+        <item name="android:layout_weight">0.5</item>
+    </style>
+
+    <style name="buttonStyle.Clear">
+        <item name="android:id">@+id/clearButton</item>
+        <item name="android:onClick">onClear</item>
+        <item name="android:text">@string/clear</item>
+    </style>
+
+    <style name="buttonStyle.Clear03">
+        <item name="android:id">@+id/clearButton</item>
+        <item name="android:text">@string/clear</item>
+        <item name="android:onClick">onClear</item>
+        <item name="android:layout_weight">0.25</item>
+    </style>
+
+    <style name="buttonStyle.Done03">
+        <item name="android:id">@+id/doneButton</item>
+        <item name="android:text">@string/done</item>
+         <item name="android:onClick">onDone</item>
+        <item name="android:layout_weight">0.25</item>
+    </style>
+    
+    <style name="buttonStyle.Wicket03">
+        <item name="android:id">@+id/wicketButton</item>
+        <item name="android:text">@string/wicket</item>
+         <item name="android:onClick">onWicket</item>
+        <item name="android:layout_weight">0.25</item>
+    </style>
+
+    <style name="buttonStyle.Cancel03">
+        <item name="android:id">@+id/cancelButton</item>
+        <item name="android:text">@string/cancel</item>
+        <item name="android:onClick">onCancel</item>
+        <item name="android:layout_weight">0.25</item>
+    </style>
+    
+      <style name="tableTextContent" parent="android:Widget.TextView">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+    
+    <style name="customSettingsEditText" parent="android:Widget.EditText">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:maxLength">2</item>
+    </style>
+    
+</resources>

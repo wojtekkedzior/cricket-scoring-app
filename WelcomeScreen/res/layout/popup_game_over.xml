@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/winningTeamLabel"
+        style="@style/genericLabelStyle" >
+    </TextView>
+    
+    
+    <View style="@style/redLineStyle" />
+
+      <TextView
+        android:id="@+id/team1Total"
+        style="@style/genericLabelStyle" >
+    </TextView>
+    
+        <TextView
+        android:id="@+id/team1TopBatsman"
+        style="@style/genericLabelStyle" >
+    </TextView>
+    
+          <TextView
+        android:id="@+id/team1SecondBatsman"
+        style="@style/genericLabelStyle" >
+    </TextView>
+    
+       
+        <TextView
+        android:id="@+id/team2TopBowler"
+        style="@style/genericLabelStyle" >
+    </TextView>
+    
+          <TextView
+        android:id="@+id/team2SecondBowler"
+        style="@style/genericLabelStyle" >
+    </TextView>
+    
+          
+          
+    <View style="@style/redLineStyle" />
+    
+    
+        <TextView
+        android:id="@+id/team2Total"
+        style="@style/genericLabelStyle" >
+    </TextView>
+    
+        <TextView
+        android:id="@+id/team2TopBatsman"
+        style="@style/genericLabelStyle" >
+    </TextView>
+    
+          <TextView
+        android:id="@+id/team2SecondBatsman"
+        style="@style/genericLabelStyle" >
+    </TextView>
+    
+       
+        <TextView
+        android:id="@+id/team1TopBowler"
+        style="@style/genericLabelStyle" >
+    </TextView>
+    
+          <TextView
+        android:id="@+id/team1SecondBowler"
+        style="@style/genericLabelStyle" >
+    </TextView>
+    
+    
+    
+    
+    <View style="@style/redLineStyle" />
+
+    <LinearLayout style="@style/buttonBarLayoutStyle" >
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onShare"
+            android:text="Share" />
+
+        <Button
+            android:id="@+id/saveToDeviceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSaveToDevice"
+            android:text="Save" />
+        
+         <Button
+            android:id="@+id/exitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onExit"
+            android:text="Exit" />
+              
+    </LinearLayout>
+
+    <View style="@style/redLineStyle" />
+
+    <LinearLayout style="@style/buttonBarLayoutStyle" >
+
+        <Button style="@style/buttonStyle.Cancel" />
+
+        <Button style="@style/buttonStyle.Done" />
+    </LinearLayout>
+
+</LinearLayout>

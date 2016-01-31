@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/gameSettingsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/selectOpenersLabel"
+            style="@style/genericLabelStyle"
+            android:text="@string/select_openers" >
+        </TextView>
+    </LinearLayout>
+
+    <View style="@style/redLineStyle" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/genericLabelStylePadded"
+            android:layout_weight="0.5"
+            android:text="@string/first_batsman" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/firstBatsmanSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:prompt="@string/battingTeam" >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/genericLabelStylePadded"
+            android:layout_weight="0.5"
+            android:text="@string/second_batsman" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/secondBatsmanSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:prompt="@string/battingTeam" >
+        </Spinner>
+    </LinearLayout>
+
+    <View style="@style/redLineStyle.Bottom" />
+
+    <LinearLayout style="@style/buttonBarLayoutStyle" >
+         <Button style="@style/buttonStyle.Cancel" />
+        <Button style="@style/buttonStyle.Done" />
+    </LinearLayout>
+
+</LinearLayout>

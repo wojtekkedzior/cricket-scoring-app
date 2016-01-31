@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="BuildAll" default="runOnPhone">
+	<property name="HelloAndroidBin" location="../HelloAndroid\bin\classes" />
+	<property name="HelloAndroidTestSource" location="../HelloAndroid\test" />
+	<property name="testJarDir" location="bin\MyAppNameTests.jar" />
+
+	<property environment="env" />
+	<property name="ANDROID_HOME" value="${env.ANDROID_HOME}" />
+	<property name="ANDROID_ECLIPSE_HOME" value="${env.ANDROID_ECLIPSE_HOME}" />
+
+	<target name="runOnPhone" depends="runTestsOnly">
+		<ant antfile="build.xml" target="build" />
+
+		<exec executable="${ANDROID_HOME}\platform-tools\adb">
+			<arg value="push" />
+			<arg value="${testJarDir}" />
+			<arg value="/data/local/tmp/" />
+		</exec>
+
+		<exec executable="${ANDROID_HOME}\platform-tools\adb">
+			<arg value="shell" />
+			<arg value="uiautomator" />
+			<arg value="runtest" />
+			<arg value="MyAppNameTests.jar" />
+			<arg value="-c" />
+			<arg value="com.uia.example.my.LaunchSettings" />
+		</exec>
+	</target>
+
+	<target name="runTestsOnly">
+		<junit>
+			<classpath>
+				<pathelement location="${HelloAndroidBin}" />
+				<pathelement location="${ANDROID_ECLIPSE_HOME}\plugins\org.junit_4.10.0.v4_10_0_v20120426-0900\junit.jar" />
+				<pathelement location="${ANDROID_ECLIPSE_HOME}\plugins\org.hamcrest.core_1.1.0.v20090501071000.jar" />
+			</classpath>
+
+			<formatter type="brief" usefile="false" />
+
+			<batchtest haltonfailure="true">
+				<fileset dir="${HelloAndroidTestSource}">
+					<include name="**/*Test*.java" />
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+
+
+
+
+
+
+
+</project>

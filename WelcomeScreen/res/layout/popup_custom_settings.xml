@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/gameSettingsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/numberOfOversLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numberOfOversLabel" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/numberOfOversInput"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" >
+
+            <requestFocus />
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/noOversLimitCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onNoOverLimit"
+            android:text="@string/noLimit" />
+    </LinearLayout>
+
+    <View style="@style/redLineStyle" />
+
+    <TextView
+        android:id="@+id/bowlingRestrictionsLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bowlingRestrictionsLabel" >
+    </TextView>
+
+    <View style="@style/redLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/gameSettingsLayoutasda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/noBowlingRestrictionsCheckBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onNoBowlingRestrictions"
+            android:text="@string/none" />
+    </LinearLayout>
+
+    <!-- Rule 1 -->
+
+    <LinearLayout
+        android:id="@+id/rule1Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/rule1Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rule1Label" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/rule1numberOfOversInput"
+            style="@style/customSettingsEditText" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/rule1BowlerMaxOverLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bowlerMaxOversString" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/rule1maxNumberOfOversInput"
+            style="@style/customSettingsEditText" >
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oversLabel" >
+        </TextView>
+    </LinearLayout>
+
+    <!-- Rule 2 -->
+
+    <LinearLayout
+        android:id="@+id/rule2Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/rule2Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rule2Label" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/rule2numberOfOversInput"
+            style="@style/customSettingsEditText" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/rule2BowlerMaxOverLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bowlerMaxOversString" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/rule2maxNumberOfOversInput"
+            style="@style/customSettingsEditText" >
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oversLabel" >
+        </TextView>
+    </LinearLayout>
+
+    <!-- Rule 3 -->
+
+    <LinearLayout
+        android:id="@+id/rule3Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/rule3Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rule3Label" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/rule3numberOfOversInput"
+            style="@style/customSettingsEditText" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/rule3BowlerMaxOverLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bowlerMaxOversString" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/rule3maxNumberOfOversInput"
+            style="@style/customSettingsEditText" >
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oversLabel" >
+        </TextView>
+    </LinearLayout>
+
+    <!-- Rule 4 -->
+
+    <LinearLayout
+        android:id="@+id/rule4Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/rule4Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rule4Label" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/rule4numberOfOversInput"
+            style="@style/customSettingsEditText" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/rule4BowlerMaxOverLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bowlerMaxOversString" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/rule4maxNumberOfOversInput"
+            style="@style/customSettingsEditText" >
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oversLabel" >
+        </TextView>
+    </LinearLayout>
+
+    <View style="@style/redLineStyle" />
+
+    <LinearLayout style="@style/buttonBarLayoutStyle" >
+
+        <Button style="@style/buttonStyle.Cancel" />
+
+        <Button style="@style/buttonStyle.Clear" />
+
+        <Button style="@style/buttonStyle.Done" />
+    </LinearLayout>
+
+</LinearLayout>

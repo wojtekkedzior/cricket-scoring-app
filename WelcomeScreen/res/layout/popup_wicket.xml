@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wojtek"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/batsmanDismissedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/batsman_dismissed"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View style="@style/redLineStyle" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        
+        <!--  Instead of the radio list have a simple lable. Walker to Mills. -->
+<!--         <RadioGroup
+            android:id="@+id/dismissedBatsmanRadioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <RadioButton android:id="@+id/strikingBatsmanName" />
+            <RadioButton android:id="@+id/nonStrikingBatsmanName" />
+        </RadioGroup> -->
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/row20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:showDividers="beginning" >
+
+            <TextView
+                android:id="@+id/batsmanDismissedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="left"
+                android:gravity="center_horizontal"
+                android:text="Dismissal Type: "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Spinner
+                android:id="@+id/dismissalTypeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                 />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/batsmanDismissedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="left"
+                android:gravity="center_horizontal"
+                android:text="Fielder: "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Spinner
+                android:id="@+id/fielderSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+        </TableRow>
+    </TableLayout>
+
+    <View style="@style/redLineStyle" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/row20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:showDividers="beginning" >
+
+            <TextView
+                android:id="@+id/batsmanDismissedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="left"
+                android:gravity="center_horizontal"
+                android:text="New Batman: "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Spinner
+                android:id="@+id/newBatsmanSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/row20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:showDividers="beginning" >
+
+            <TextView
+                android:id="@+id/newBatsmanLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Add Batsman: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/newBatsmanText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:inputType="text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+		<TableRow
+            android:id="@+id/row21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/batsmanDismissedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="left"
+                android:gravity="center_horizontal"
+                android:text="@string/on_strike"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/onStrikeGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <RadioButton
+                    android:id="@+id/onStrike"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/notOnStrike"
+                    android:text="@string/no" />
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+
+    <View style="@style/redLineStyle.Bottom" />
+
+    <LinearLayout style="@style/buttonBarLayoutStyle" >cancelButton
+        <Button style="@style/buttonStyle.Cancel" android:id="@+id/cancelButton"/>
+        <Button style="@style/buttonStyle.Done" android:id="@+id/doneButton"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,567 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/totalRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/totalRuns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/runRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1" 
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                android:id="@+id/totalOvers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+    </TableLayout>
+
+    <View style="@style/redLineStyle" />
+
+    <!--
+________________________________________________________________________________________________
+
+										  BATTING table 
+										  ids from 20 
+________________________________________________________________________________________________
+    -->
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/batsmanTitleRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/batsmanTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:gravity="center"
+                android:text="@string/batting_team"
+                android:textSize="18sp"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/batsmanHeadings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/batsmanEmpty"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsmanRunsHeading"
+                android:gravity="center"
+                android:text="@string/runs_underline"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <!--
+           not supported now
+      <TextView
+                android:id="@+id/batsmanScoringShotsHeading"
+                android:gravity="center"
+                android:text="@string/scoringShots"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+            -->
+
+            <TextView
+                android:id="@+id/batsmanStrikeRateHeading"
+                android:gravity="center"
+                android:text="@string/battingStrikeRate"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsmanBallsHeading"
+                android:gravity="center"
+                android:text="@string/balls"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsmanFourHeading"
+                android:gravity="center"
+                android:text="@string/fourHeader"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsmanSixHeading"
+                android:gravity="center"
+                android:text="@string/sixHeader"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/batsman1TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/batsman1name"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsman1runs"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <!--
+          not supported now
+	       <TextView
+                android:id="@+id/batsman1scoringShots"
+                android:gravity="center_horizontal"
+                android:text="35" >
+            </TextView>
+            -->
+
+            <TextView
+                android:id="@+id/batsman1strikeRate"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsman1balls"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsman1fours"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsman1sixes"
+                style="@style/tableTextContent" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/batsman2TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/batsman2name"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsman2runs"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <!--
+            not supported now
+            <TextView
+                android:id="@+id/batsman2scoringShots"
+                 style="@style/tableTextContent" 
+                android:text="27" >
+            </TextView>
+            -->
+
+            <TextView
+                android:id="@+id/batsman2strikeRate"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsman2balls"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsman2fours"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/batsman2sixes"
+                style="@style/tableTextContent" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <View style="@style/redLineStyle" />
+
+    <!--
+________________________________________________________________________________________________
+
+										  Bowling table 
+________________________________________________________________________________________________
+    -->
+
+    <TableLayout
+        android:id="@+id/bowlerTableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/bowlerTitleRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/bowlerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="7"
+                android:gravity="center"
+                android:text="Bowling Team"
+                android:textSize="18dp"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/bowlerHeadings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/bowlerEmpty"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerOversHeading"
+                android:gravity="center"
+                android:text="@string/overs"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlermaidensHeading"
+                android:gravity="center"
+                android:text="@string/maidens"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerRunsHeading"
+                android:gravity="center"
+                android:text="@string/runsShortLabel"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerWicketsHeading"
+                android:gravity="center"
+                android:text="@string/wickets"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerEconomyHeading"
+                android:gravity="center"
+                android:text="@string/economy"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerFourHeading"
+                android:gravity="center"
+                android:text="@string/fourHeader"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerSixHeading"
+                android:gravity="center"
+                android:text="@string/sixHeader"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerWideHeading"
+                android:gravity="center"
+                android:text="@string/wideShortLabel"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowlerNoBallHeading"
+                android:gravity="center"
+                android:text="@string/noballShortLabel"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/bowler1name"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler1overs"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler1maidens"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler1runs"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler1wickets"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler1economy"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler1fours"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler1sixes"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler1wides"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler1noBalls"
+                style="@style/tableTextContent" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/bowler2name"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler2overs"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler2maidens"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler2runs"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler2wickets"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler2economy"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler2fours"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler2sixes"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler2wides"
+                style="@style/tableTextContent" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bowler2noBalls"
+                style="@style/tableTextContent" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <!--
+________________________________________________________________________________________________
+
+										  Over Summary
+________________________________________________________________________________________________
+    -->
+
+    <View style="@style/redLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/overSummaryLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="20dp"
+            android:text="Over:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/overSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <View style="@style/redLineStyle.Bottom" />
+
+    <LinearLayout
+        android:id="@+id/overSummaryLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+         <Button
+            android:id="@+id/undoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onUndo"
+            android:text="Undo" />
+
+        <Button
+            android:id="@+id/previousBowlerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onPreviousBowlerClick"
+            android:text="Pre Bowler" />
+
+        <Button
+            android:id="@+id/newBowlerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onNewBowlerClick"
+            android:text="New Bowler" />
+
+        <Button
+            android:id="@+id/dotBallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onDotBallClick"
+            android:text="Dot Ball" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/buttonBarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    
+           <Button
+            android:id="@+id/scoreCardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onScoreCard"
+            android:text="Scorecard" />
+           
+           <Button
+            android:id="@+id/newInningsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onNewInningsClick"
+            android:enabled="false"
+            android:text="New Innings" />
+           
+            <Button
+            android:id="@+id/endGameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onEndGame"
+            android:visibility="invisible"
+            android:text="End Game" />
+           
+    </LinearLayout>
+</LinearLayout>

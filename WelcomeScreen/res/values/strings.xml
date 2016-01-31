@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HelloAndroid!</string>
+    <string name="app_name">Hello, Android</string>
+    <string name="batsmanLabel">Batsman</string>
+    <string name="bowlerLabel">Bowler</string>
+    <string name="battingTeam">Batting First</string>
+    <string name="side">Wide</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="noBallExtra">No-Ball - Extra ( 1 + )</string>
+    <string name="noBallRun">No-Ball - Run ( 1 + )</string>
+    <string name="wide">Wide ( 1 + )</string>
+    <string name="bye">Bye ( 1 or )</string>
+    <string name="legBye">Leg Bye (1 or )</string>
+    <string name="dead">Dead</string>
+    <string name="crossed">Crossed</string>
+    <string name="country_prompt">Choose a country</string>
+    
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- score card batting -->
+    <string name="batting_team">Batting Team</string>
+    <string name="name_underline"><u>Name</u></string>
+    <string name="runs_underline"><u>Runs</u></string>
+    <string name="scoringShots"><u>SS</u></string>
+    <string name="battingStrikeRate"><u>SR</u></string>
+    <string name="balls"><u>B</u></string>
+    <string name="fourHeader"><u>4</u></string>
+    <string name="sixHeader"><u>6</u></string>
+    
+    <!-- score card bowling  -->
+    <string name="overs"><u>O</u></string>
+    <string name="maidens"><u>M</u></string>
+    <string name="wickets"><u>W</u></string>
+    <string name="economy"><u>E</u></string>
+    <string name="runsShortLabel"><u>R</u></string>
+    <string name="wideShortLabel"><u>wd</u></string>
+    <string name="noballShortLabel"><u>nb</u></string>
+
+    <!-- buttons -->
+    <string name="clear">Clear</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="wicket">Wicket</string>
+    <string name="team_name">Team Name:</string>
+    <string name="game_date">Date:</string>
+    <string name="game_date_hint">Game Date</string>
+    <string name="team_name_hint">Team Name</string>
+    <string name="player_name">Player Name</string>
+    <string name="name">Name</string>
+    <string name="_1_">1.</string>
+    <string name="_2_">2.</string>
+    <string name="_3_">3.</string>
+    <string name="_4_">4.</string>
+    <string name="_5_">5.</string>
+    <string name="_6_">6.</string>
+    <string name="_7_">7.</string>
+    <string name="_8_">8.</string>
+    <string name="_9_">9.</string>
+    <string name="_10_">10.</string>
+    <string name="_11_">11.</string>
+    <string name="batsman_dismissed">Batsman Dismissed:</string>
+    <string name="on_strike">On Strike:</string>
+    <string name="select_openers">"Select Openers: "</string>
+    <string name="first_batsman">First batsman:</string>
+    <string name="second_batsman">Second batsman:</string>
+    <string name="start">Start</string>
+    <string name="exit">Exit</string>
+    <string name="click_to_add_team_1">team1</string>
+    <string name="vs">vs.</string>
+    <string name="click_to_add_team_2">team2</string>
+    <string name="runs">Runs</string>
+    <string name="to">To:</string>
+    
+    
+    <string name="twentyTwenty">20/20 (max 4 overs per bowler)</string>
+    <string name="fortyForty">40/40 (max 10 overs per bowler)</string>
+    <string name="gameSettings">Game Settings</string>
+    <string name="customSettings">Custom settings</string>
+    
+    <string name="numberOfOversLabel">Number of Overs: </string>
+    <string name="noLimit">No Limit </string>
+    <string name="bowlingRestrictionsLabel">Bowling Restrictions</string>
+    <string name="none">None</string>
+    <string name="rule1Label">1. </string>
+    <string name="rule2Label">2. </string>
+    <string name="rule3Label">3. </string>
+    <string name="rule4Label">4. </string>
+    <string name="bowlerMaxOversString"> bowler(s) can bowl a max of </string>
+    <string name="oversLabel"> overs.</string>
+    
+  
+</resources>
