@@ -22,6 +22,7 @@ public class Ball extends View {
 
 	public Ball(Context context) {
 		super(context);
+		setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 	}
 	
 	public interface IMyEventListener {
