@@ -733,9 +733,11 @@ public class GameData50overs {
 	private void firstInnings() {
 
 	}
-
-	private void secondInnings() {
-		// Over 1
+	
+	
+	
+	
+	public void indiaOver1() {
 		bracewell.setBowlingStatus(BowlingStatus.OtherBowler);
 		southee.setBowlingStatus(BowlingStatus.CurrentlyBowling);
 
@@ -745,6 +747,74 @@ public class GameData50overs {
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+	}
+	
+	public void indiaOver2() {
+		gameProcessor.startNewOver();
+		
+	}
+	
+	public void indiaOver3() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	public void indiaOver4() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void indiaOver5() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void indiaOver6() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void indiaOver7() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void indiaOver8() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void indiaOver9() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void indiaOver10() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	public void indiaOver11() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void indiaOver12() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	public void indiaOver13() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	private void secondInnings() {
+		// Over 1
+
 
 		// Over 2
 		southee.setBowlingStatus(BowlingStatus.OtherBowler);
@@ -1124,4 +1194,6 @@ public class GameData50overs {
 
 		gameProcessor.delivery(BallType.SCORING, 6, 0, 0);
 	}
+
+
 }

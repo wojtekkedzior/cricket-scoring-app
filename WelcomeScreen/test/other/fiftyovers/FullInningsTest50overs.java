@@ -2,12 +2,15 @@ package other.fiftyovers;
 
 import static org.junit.Assert.assertEquals;
 import game.Game;
+import game.GameProcessor;
 import game.Team;
 
 import org.junit.Before;
 import org.junit.Test;
 
+import common.BattingStatus;
 import common.DismisalType;
+import common.TeamBattingStatus;
 
 public class FullInningsTest50overs {
 
@@ -20,14 +23,30 @@ public class FullInningsTest50overs {
 	private Team nzTeam;
 	private Team indianTeam;
 	
+	private GameProcessor gameProcessor;
+	
 	@Before
 	public void setUp() {
 		game = gameData.getGame(true);
+		
+		gameProcessor = new GameProcessor(game);
+		gameData.setGameProcessor(gameProcessor);
 		
 		nzTeam = game.getTeam(1);
 		indianTeam = game.getTeam(2);
 		
 		new NzInnings (gameData, game);
+		
+		
+		game.changeTeamsAround(TeamBattingStatus.Batting_Overs_Finished);
+		gameProcessor.startNewInnings();
+		gameProcessor.updateGame(game);
+
+		gameData.sharma.setBattingStatus(BattingStatus.Striker);
+		gameData.rahane.setBattingStatus(BattingStatus.NonStriker);
+		
+		
+		new IndianInnings(gameData, game);
 	}
 
 	//Test Indian bowlers

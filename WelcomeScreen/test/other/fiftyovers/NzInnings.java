@@ -10,13 +10,10 @@ import common.DismisalType;
 public class NzInnings {
 
 	private GameData50overs gameData;
-	private GameProcessor gameProcessor;
 	private Game game;
 
 	public NzInnings(GameData50overs gameData, Game game) {
 		this.gameData = gameData;
-		gameProcessor = new GameProcessor(game);
-		gameData.setGameProcessor(gameProcessor);
 		this.game = game;
 
 		int over = 0;
@@ -71,7 +68,6 @@ public class NzInnings {
 		nzOver44(over++);
 	}
 
-	// TODO remove bowler
 	private void checkTeamAndOverTotals(int expectedTeamTotal, int overNumber, int runsInOver, int extrasInOver) {
 		int battingRunsScored = game.getBattingTeam().getRunsScored();
 
