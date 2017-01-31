@@ -261,6 +261,13 @@ public abstract class ScoringScreenTestBase extends TestBase<ScoringScreen> {
 			}
 		});
 		mInstrumentation.waitForIdleSync(); 
+		
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	protected void selectWicket(final boolean newBatsmanOnStrike, DismisalType dismisalType) {
