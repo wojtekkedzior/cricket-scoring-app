@@ -751,26 +751,64 @@ public class GameData50overs {
 	
 	public void indiaOver2() {
 		gameProcessor.startNewOver();
-		
+		southee.setBowlingStatus(BowlingStatus.OtherBowler);
+		bracewell.setBowlingStatus(BowlingStatus.CurrentlyBowling);
+
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.SCORING, 1, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);		
 	}
 	
 	public void indiaOver3() {
-		// TODO Auto-generated method stub
-		
+		bracewell.setBowlingStatus(BowlingStatus.OtherBowler);
+		southee.setBowlingStatus(BowlingStatus.CurrentlyBowling);
+
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.SCORING, 4, 0, 0);
+		gameProcessor.delivery(BallType.WIDE, 0, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.SCORING, 1, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
 	}
 	
 	
 	public void indiaOver4() {
-		// TODO Auto-generated method stub
-		
+		southee.setBowlingStatus(BowlingStatus.OtherBowler);
+		bracewell.setBowlingStatus(BowlingStatus.CurrentlyBowling);
+
+		gameProcessor.delivery(BallType.SCORING, 4, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.SCORING, 4, 0, 0);
 	}
 
 	public void indiaOver5() {
-		// TODO Auto-generated method stub
-		
+		bracewell.setBowlingStatus(BowlingStatus.OtherBowler);
+		southee.setBowlingStatus(BowlingStatus.CurrentlyBowling);
+
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.SCORING, 6, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
 	}
 	public void indiaOver6() {
-		// TODO Auto-generated method stub
+		southee.setBowlingStatus(BowlingStatus.OtherBowler);
+		bracewell.setBowlingStatus(BowlingStatus.CurrentlyBowling);
+
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.SCORING, 6, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.SCORING, 4, 0, 0);
 		
 	}
 	public void indiaOver7() {
@@ -814,64 +852,11 @@ public class GameData50overs {
 	
 	private void secondInnings() {
 		// Over 1
-
-
 		// Over 2
-		southee.setBowlingStatus(BowlingStatus.OtherBowler);
-		bracewell.setBowlingStatus(BowlingStatus.CurrentlyBowling);
-
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.SCORING, 1, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-
 		// Over 3
-		bracewell.setBowlingStatus(BowlingStatus.OtherBowler);
-		southee.setBowlingStatus(BowlingStatus.CurrentlyBowling);
-
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.SCORING, 4, 0, 0);
-		gameProcessor.delivery(BallType.WIDE, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.SCORING, 1, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-
 		// Over 4
-		southee.setBowlingStatus(BowlingStatus.OtherBowler);
-		bracewell.setBowlingStatus(BowlingStatus.CurrentlyBowling);
-
-		gameProcessor.delivery(BallType.SCORING, 4, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.SCORING, 4, 0, 0);
-
 		// Over 5
-		bracewell.setBowlingStatus(BowlingStatus.OtherBowler);
-		southee.setBowlingStatus(BowlingStatus.CurrentlyBowling);
-
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.SCORING, 6, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-
 		// Over 6
-		southee.setBowlingStatus(BowlingStatus.OtherBowler);
-		bracewell.setBowlingStatus(BowlingStatus.CurrentlyBowling);
-
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.SCORING, 6, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.SCORING, 4, 0, 0);
-
 		// Over 7
 		bracewell.setBowlingStatus(BowlingStatus.OtherBowler);
 		southee.setBowlingStatus(BowlingStatus.CurrentlyBowling);

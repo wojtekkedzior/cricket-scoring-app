@@ -97,8 +97,19 @@ public class IndianInnings {
 	}
 
 	private void indiaOver2(int overNumber) {
-		// TODO Auto-generated method stub
-		
+		gameData.indiaOver2();
+
+		assertEquals(8, gameData.sharma.getBattingScore().getBallsFaced());
+		assertEquals(4, gameData.sharma.getBattingScore().getRuns());
+		assertEquals(0, gameData.sharma.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.NonStriker, gameData.sharma.getBattingStatus());
+
+		assertEquals(4, gameData.rahane.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.rahane.getBattingScore().getRuns());
+		assertEquals(1, gameData.rahane.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.rahane.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver3(int overNumber) {
