@@ -2,7 +2,6 @@ package other.fiftyovers;
 
 import static org.junit.Assert.assertEquals;
 import game.Game;
-import game.GameProcessor;
 
 import common.BattingStatus;
 import common.DismisalType;

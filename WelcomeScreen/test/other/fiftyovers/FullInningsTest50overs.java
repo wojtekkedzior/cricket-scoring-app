@@ -37,14 +37,12 @@ public class FullInningsTest50overs {
 		
 		new NzInnings (gameData, game);
 		
-		
 		game.changeTeamsAround(TeamBattingStatus.Batting_Overs_Finished);
 		gameProcessor.startNewInnings();
 		gameProcessor.updateGame(game);
 
 		gameData.sharma.setBattingStatus(BattingStatus.Striker);
 		gameData.rahane.setBattingStatus(BattingStatus.NonStriker);
-		
 		
 		new IndianInnings(gameData, game);
 	}

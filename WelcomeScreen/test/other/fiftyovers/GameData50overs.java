@@ -843,11 +843,12 @@ public class GameData50overs {
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		
 		gameProcessor.delivery(BallType.SCORING, 1, 0, 0);
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.SCORING, 1, 0, 0);
+		
 		gameProcessor.delivery(BallType.WIDE, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
+		gameProcessor.delivery(BallType.SCORING, 1, 0, 0);
 	}
 
 	public void indiaOver10() {
@@ -873,7 +874,7 @@ public class GameData50overs {
 		gameProcessor.delivery(BallType.WIDE, 0, 0, 0);
 		gameProcessor.delivery(BallType.WIDE, 0, 0, 0);
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.LEG_BYE, 0, 0, 0);
+		gameProcessor.delivery(BallType.LEG_BYE, 1, 0, 0);
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
 		gameProcessor.delivery(BallType.SCORING, 4, 0, 0);
 		gameProcessor.delivery(BallType.SCORING, 1, 0, 0);
@@ -1026,8 +1027,8 @@ public class GameData50overs {
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
-		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
 		gameProcessor.delivery(BallType.SCORING, 1, 0, 0);
+		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
 	}
 
 	public void indiaOver23() {
@@ -1120,7 +1121,7 @@ public class GameData50overs {
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
 
 		jadhav.setBattingStatus(BattingStatus.NewBatsman);
-		gameProcessor.runOut(guptill, 0, 0, 0, BallType.DOT_BALL, DismisalType.RUNOUT);
+		gameProcessor.runOut(guptill, 0, 0, 0, BallType.SCORING, DismisalType.RUNOUT);
 
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
