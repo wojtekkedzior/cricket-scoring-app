@@ -55,17 +55,6 @@ public class IndianInnings {
 		indiaOver32(over++);
 		indiaOver33(over++);
 		indiaOver34(over++);
-		indiaOver35(over++);
-		indiaOver36(over++);
-		indiaOver37(over++);
-		indiaOver38(over++);
-		indiaOver39(over++);
-		indiaOver40(over++);
-
-		indiaOver41(over++);
-		indiaOver42(over++);
-		indiaOver43(over++);
-		indiaOver44(over++);
 	}
 	
 	private void checkTeamAndOverTotals(int expectedTeamTotal, int overNumber, int runsInOver, int extrasInOver) {
@@ -113,215 +102,530 @@ public class IndianInnings {
 	}
 
 	private void indiaOver3(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver3();
+		assertEquals(9, gameData.sharma.getBattingScore().getBallsFaced());
+		assertEquals(4, gameData.sharma.getBattingScore().getRuns());
+		assertEquals(0, gameData.sharma.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.NonStriker, gameData.sharma.getBattingStatus());
+
+		assertEquals(9, gameData.rahane.getBattingScore().getBallsFaced());
+		assertEquals(6, gameData.rahane.getBattingScore().getRuns());
+		assertEquals(5, gameData.rahane.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.rahane.getBattingStatus());
+
+		checkTeamAndOverTotals(11, overNumber, 6, 1);
 		
 	}
 
 	private void indiaOver4(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver4();
+		assertEquals(9, gameData.sharma.getBattingScore().getBallsFaced());
+		assertEquals(4, gameData.sharma.getBattingScore().getRuns());
+		assertEquals(0, gameData.sharma.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.sharma.getBattingStatus());
+
+		assertEquals(15, gameData.rahane.getBattingScore().getBallsFaced());
+		assertEquals(14, gameData.rahane.getBattingScore().getRuns());
+		assertEquals(8, gameData.rahane.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.NonStriker, gameData.rahane.getBattingStatus());
+
+		checkTeamAndOverTotals(19, overNumber, 8, 0);
 		
 	}
 
 	private void indiaOver5(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver5();
+		assertEquals(15, gameData.sharma.getBattingScore().getBallsFaced());
+		assertEquals(10, gameData.sharma.getBattingScore().getRuns());
+		assertEquals(6, gameData.sharma.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.NonStriker, gameData.sharma.getBattingStatus());
+
+		assertEquals(15, gameData.rahane.getBattingScore().getBallsFaced());
+		assertEquals(14, gameData.rahane.getBattingScore().getRuns());
+		assertEquals(0, gameData.rahane.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.rahane.getBattingStatus());
+
+		checkTeamAndOverTotals(25, overNumber, 6, 0);
 		
 	}
 
 	private void indiaOver6(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver6();
 		
+		assertEquals(15, gameData.sharma.getBattingScore().getBallsFaced());
+		assertEquals(10, gameData.sharma.getBattingScore().getRuns());
+		assertEquals(0, gameData.sharma.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.sharma.getBattingStatus());
+
+		assertEquals(21, gameData.rahane.getBattingScore().getBallsFaced());
+		assertEquals(26, gameData.rahane.getBattingScore().getRuns());
+		assertEquals(12, gameData.rahane.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.NonStriker, gameData.rahane.getBattingStatus());
+
+		checkTeamAndOverTotals(37, overNumber, 12, 0);
 	}
 
 	private void indiaOver7(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver7();
 		
+		assertEquals(16, gameData.sharma.getBattingScore().getBallsFaced());
+		assertEquals(11, gameData.sharma.getBattingScore().getRuns());
+		assertEquals(1, gameData.sharma.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.sharma.getBattingStatus());
+
+		assertEquals(26, gameData.rahane.getBattingScore().getBallsFaced());
+		assertEquals(32, gameData.rahane.getBattingScore().getRuns());
+		assertEquals(6, gameData.rahane.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.NonStriker, gameData.rahane.getBattingStatus());
+
+		checkTeamAndOverTotals(44, overNumber, 7, 0);
 	}
 
 	private void indiaOver8(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver8();
 		
+		assertEquals(22, gameData.sharma.getBattingScore().getBallsFaced());
+		assertEquals(13, gameData.sharma.getBattingScore().getRuns());
+		assertEquals(2, gameData.sharma.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.NonStriker, gameData.sharma.getBattingStatus());
+
+		assertEquals(26, gameData.rahane.getBattingScore().getBallsFaced());
+		assertEquals(32, gameData.rahane.getBattingScore().getRuns());
+		assertEquals(0, gameData.rahane.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.rahane.getBattingStatus());
+
+		checkTeamAndOverTotals(46, overNumber, 2, 0);
 	}
 
 	private void indiaOver9(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver9();
+		
+		assertEquals(24, gameData.sharma.getBattingScore().getBallsFaced());
+		assertEquals(14, gameData.sharma.getBattingScore().getRuns());
+		assertEquals(1, gameData.sharma.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.NonStriker, gameData.sharma.getBattingStatus());
+
+		assertEquals(27, gameData.rahane.getBattingScore().getBallsFaced());
+		assertEquals(33, gameData.rahane.getBattingScore().getRuns());
+		assertEquals(1, gameData.rahane.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.rahane.getBattingStatus());
+		
+		checkTeamAndOverTotals(49, overNumber, 3, 1);
 		
 	}
 
 	private void indiaOver10(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver10();
 		
+		assertEquals(8, gameData.sharma.getBattingScore().getBallsFaced());
+		assertEquals(4, gameData.sharma.getBattingScore().getRuns());
+		assertEquals(0, gameData.sharma.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.NonStriker, gameData.sharma.getBattingStatus());
+		
+		assertEquals(8, gameData.rahane.getBattingScore().getBallsFaced());
+		assertEquals(4, gameData.rahane.getBattingScore().getRuns());
+		assertEquals(0, gameData.rahane.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.NonStriker, gameData.sharma.getBattingStatus());
+		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+
+		
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver11(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver11();
+		
+		assertEquals(8, gameData.rahane.getBattingScore().getBallsFaced());
+		assertEquals(4, gameData.rahane.getBattingScore().getRuns());
+		assertEquals(0, gameData.rahane.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.NonStriker, gameData.sharma.getBattingStatus());
+		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 		
 	}
 
 	private void indiaOver12(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver12();
 		
+		assertEquals(8, gameData.rahane.getBattingScore().getBallsFaced());
+		assertEquals(4, gameData.rahane.getBattingScore().getRuns());
+		assertEquals(0, gameData.rahane.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.NonStriker, gameData.sharma.getBattingStatus());
+		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+		
+		assertEquals(4, gameData.pandey.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.pandey.getBattingScore().getRuns());
+		assertEquals(1, gameData.pandey.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.pandey.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver13(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver13();
 		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+		
+		assertEquals(4, gameData.pandey.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.pandey.getBattingScore().getRuns());
+		assertEquals(1, gameData.pandey.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.pandey.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver14(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver14();
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
 		
+		assertEquals(4, gameData.pandey.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.pandey.getBattingScore().getRuns());
+		assertEquals(1, gameData.pandey.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.pandey.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver15(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver15();		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
 		
+		assertEquals(4, gameData.pandey.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.pandey.getBattingScore().getRuns());
+		assertEquals(1, gameData.pandey.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.pandey.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver16(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver16();	
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
 		
+		assertEquals(4, gameData.pandey.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.pandey.getBattingScore().getRuns());
+		assertEquals(1, gameData.pandey.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.pandey.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver17(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver17();		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
 		
+		assertEquals(4, gameData.pandey.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.pandey.getBattingScore().getRuns());
+		assertEquals(1, gameData.pandey.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.pandey.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver18(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver18();		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
 		
+		assertEquals(4, gameData.pandey.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.pandey.getBattingScore().getRuns());
+		assertEquals(1, gameData.pandey.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.pandey.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver19(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver19();		
 		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+		
+		assertEquals(4, gameData.pandey.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.pandey.getBattingScore().getRuns());
+		assertEquals(1, gameData.pandey.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.pandey.getBattingStatus());
+		
+		assertEquals(4, gameData.dhoni.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRuns());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.dhoni.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver20(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver20();
 		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+		
+		assertEquals(4, gameData.dhoni.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRuns());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.dhoni.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver21(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver21();		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
 		
+		assertEquals(4, gameData.dhoni.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRuns());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.dhoni.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver22(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver22();		
 		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+		
+		assertEquals(4, gameData.dhoni.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRuns());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.dhoni.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver23(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver23();		
 		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+		
+		assertEquals(4, gameData.dhoni.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRuns());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.dhoni.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver24(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver24();		
 		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+		
+		assertEquals(4, gameData.dhoni.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRuns());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.dhoni.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver25(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver25();		
 		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+		
+		assertEquals(4, gameData.dhoni.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRuns());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.dhoni.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver26(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver26();		
 		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+		
+		assertEquals(4, gameData.dhoni.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRuns());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.dhoni.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver27(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver27();		
 		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+		
+		assertEquals(4, gameData.dhoni.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRuns());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.dhoni.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver28(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver28();		
 		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+		
+		assertEquals(4, gameData.dhoni.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRuns());
+		assertEquals(1, gameData.dhoni.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.pandey.getBattingStatus());
+		
+		assertEquals(4, gameData.jadhav.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.jadhav.getBattingScore().getRuns());
+		assertEquals(1, gameData.jadhav.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.jadhav.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 	
 	private void indiaOver29(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver29();		
 		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+		
+		assertEquals(4, gameData.jadhav.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.jadhav.getBattingScore().getRuns());
+		assertEquals(1, gameData.jadhav.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.jadhav.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver30(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver30();		
 		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
+		
+		assertEquals(4, gameData.jadhav.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.jadhav.getBattingScore().getRuns());
+		assertEquals(1, gameData.jadhav.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.jadhav.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver31(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver31();		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
 		
+		assertEquals(4, gameData.jadhav.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.jadhav.getBattingScore().getRuns());
+		assertEquals(1, gameData.jadhav.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.jadhav.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver32(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver32();
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
 		
+		assertEquals(4, gameData.jadhav.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.jadhav.getBattingScore().getRuns());
+		assertEquals(1, gameData.jadhav.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.jadhav.getBattingStatus());
+
+		checkTeamAndOverTotals(5, overNumber, 1, 0);
 	}
 
 	private void indiaOver33(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver33();		
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
 		
+		assertEquals(4, gameData.jadhav.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.jadhav.getBattingScore().getRuns());
+		assertEquals(1, gameData.jadhav.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.jadhav.getBattingStatus());
+
+		checkTeamAndOverTotals(188, overNumber, 1, 0);
 	}
 
 	private void indiaOver34(int overNumber) {
-		// TODO Auto-generated method stub
+		gameData.indiaOver34();
+		assertEquals(4, gameData.kohli.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.kohli.getBattingScore().getRuns());
+		assertEquals(1, gameData.kohli.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.kohli.getBattingStatus());
 		
+		assertEquals(4, gameData.jadhav.getBattingScore().getBallsFaced());
+		assertEquals(1, gameData.jadhav.getBattingScore().getRuns());
+		assertEquals(1, gameData.jadhav.getBattingScore().getRunsForOver(overNumber));
+		assertEquals(BattingStatus.Striker, gameData.jadhav.getBattingStatus());
+
+		checkTeamAndOverTotals(196, overNumber, 1, 0);
 	}
 
-	private void indiaOver35(int overNumber) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void indiaOver36(int overNumber) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void indiaOver37(int overNumber) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void indiaOver38(int overNumber) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void indiaOver39(int overNumber) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void indiaOver40(int overNumber) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void indiaOver41(int overNumber) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void indiaOver42(int overNumber) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void indiaOver43(int overNumber) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void indiaOver44(int overNumber) {
-		// TODO Auto-generated method stub
-		
-	}
-	
 	
 	
 }
