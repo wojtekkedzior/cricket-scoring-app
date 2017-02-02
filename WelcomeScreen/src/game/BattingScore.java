@@ -147,6 +147,11 @@ public class BattingScore implements Serializable {
 		return Float.valueOf(getRuns()) / Float.valueOf(getBallsFaced()) * 100f;
 	}
 	
+	/**
+	 * Number of occurrences of a particular run i.e 1,2,4, etc
+	 * @param run - type of run
+	 * @return number of occurrences of the given run type
+	 */
 	public int getNumberOfRuns(int run) {
 		int numOfRun = 0;
 		for (Entry<Integer, BattingOverBean> overNumber : battingOvers.entrySet()) {
@@ -182,4 +187,5 @@ public class BattingScore implements Serializable {
 	public void setBattingSlot(int battingSlot) {
 		this.battingSlot = battingSlot;
 	}
+	
 }
