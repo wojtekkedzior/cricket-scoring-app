@@ -82,17 +82,13 @@ public class GameProcessor implements Serializable {
 		}
 
 		updateBatsmanPositions(runs);
-		completeScore(ballType);
+		overTracker.updateOver(ballType);
 	}
 	
 	private void updateBatsmanPositions(int runs) {
 		if (runs == 1 || runs == 3 || runs == 5) {
 			battingTeam.alternateStriker();
 		}
-	}
-	
-	private void completeScore(BallType ballType) {
-		overTracker.updateOver(ballType);
 	}
 
 	public void dismisal(DismisalType dismisalType, Player fielder, int runs) {
@@ -119,7 +115,7 @@ public class GameProcessor implements Serializable {
 			 if(newBatsman == null) {
 				 battingTeam.getStriker().setBattingStatus(BattingStatus.Out);	
 				 //all out
-				 completeScore(BallType.WICKET);
+				 overTracker.updateOver(BallType.WICKET);
 				 return;
 			 }
 			 battingTeam.getStriker().setBattingStatus(BattingStatus.Out);	
@@ -130,7 +126,7 @@ public class GameProcessor implements Serializable {
 			newBatsman.setBattingStatus(BattingStatus.Striker); 
 		}
 		
-		completeScore(BallType.WICKET);
+		overTracker.updateOver(BallType.WICKET);
 	}
 
 	public void stumpedOfWide(Player fielder, int ballNumber, int runs) { //hard code this to 1 run. u can't get more than 1 wide when stumped of a wide
@@ -148,7 +144,7 @@ public class GameProcessor implements Serializable {
 		battingTeam.getStriker().getBattingScore().setBattingWicketBean(battingWicketBean);
 		
 		bowler.getBowlingScore().addWideAndExtras(runs); //any runs ran of a wide count a wideRuns.
-		completeScore(BallType.WIDE);
+		overTracker.updateOver(BallType.WIDE);
 	}
 	
 	public void runOut(Player fielder, int runs, float rawX, float rawY, BallType ballType, DismisalType dismisalType) {
@@ -202,15 +198,7 @@ public class GameProcessor implements Serializable {
 				 newBatsman = battingTeam.getBatsmanByStatus(BattingStatus.NewBatsmanOffStrike);
 				 if(newBatsman == null) {
 					 //all out
-					 if(ballType == BallType.WIDE) {
-						 completeScore(BallType.WIDE);
-					 } else if (ballType == BallType.NO_BALL_EXTRA)  {
-						 completeScore(BallType.NO_BALL_EXTRA);
-					 } else if (ballType == BallType.NO_BALL_RUN)  {
-						 completeScore(BallType.NO_BALL_RUN);
-					 } else {
-						 completeScore(BallType.WICKET);
-					 }
+					 overTracker.updateOver(ballType);
 					 return;
 				 }
 				 newBatsman.setBattingStatus(BattingStatus.NonStriker); 
@@ -228,15 +216,7 @@ public class GameProcessor implements Serializable {
 				 newBatsman = battingTeam.getBatsmanByStatus(BattingStatus.NewBatsmanOffStrike);
 				 if(newBatsman == null) {
 					 //all out
-					 if(ballType == BallType.WIDE) {
-						 completeScore(BallType.WIDE);
-					 } else if (ballType == BallType.NO_BALL_EXTRA)  {
-						 completeScore(BallType.NO_BALL_EXTRA);
-					 } else if (ballType == BallType.NO_BALL_RUN)  {
-						 completeScore(BallType.NO_BALL_RUN);
-					 } else {
-						 completeScore(BallType.WICKET);
-					 }
+					 overTracker.updateOver(ballType);
 					 return;
 				 }
 				 battingTeam.getNonStriker().setBattingStatus(BattingStatus.Striker);
@@ -250,7 +230,7 @@ public class GameProcessor implements Serializable {
 			throw new IllegalArgumentException("This method is used only for runouts");
 		}
 		
-		completeScore(ballType);
+		overTracker.updateOver(ballType);
 	}
 	
 	protected OverTracker getOverTracker() {
