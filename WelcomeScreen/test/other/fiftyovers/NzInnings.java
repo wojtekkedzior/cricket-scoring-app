@@ -84,12 +84,12 @@ public class NzInnings {
 		assertEquals(6, gameData.guptill.getBattingScore().getBallsFaced());
 		assertEquals(0, gameData.guptill.getBattingScore().getRuns());
 		assertEquals(0, gameData.guptill.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.guptill.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.guptill.getBattingStatus());
 
 		assertEquals(0, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(0, gameData.latham.getBattingScore().getRuns());
 		assertEquals(0, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		checkTeamAndOverTotals(1, overNumber, 1, 1);
 	}
@@ -106,12 +106,12 @@ public class NzInnings {
 		assertEquals(1, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(1, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(0, gameData.williamson.getBattingScore().getBallsFaced());
 		assertEquals(0, gameData.williamson.getBattingScore().getRuns());
 		assertEquals(0, gameData.williamson.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.williamson.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.williamson.getBattingStatus());
 
 		checkTeamAndOverTotals(14, overNumber, 13, 0);
 	}
@@ -122,12 +122,12 @@ public class NzInnings {
 		assertEquals(1, gameData.williamson.getBattingScore().getBallsFaced());
 		assertEquals(1, gameData.williamson.getBattingScore().getRuns());
 		assertEquals(1, gameData.williamson.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.williamson.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.williamson.getBattingStatus());
 
 		assertEquals(6, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(4, gameData.latham.getBattingScore().getRuns());
 		assertEquals(3, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		checkTeamAndOverTotals(18, overNumber, 4, 0);
 	}
@@ -138,12 +138,12 @@ public class NzInnings {
 		assertEquals(4, gameData.williamson.getBattingScore().getBallsFaced());
 		assertEquals(2, gameData.williamson.getBattingScore().getRuns());
 		assertEquals(1, gameData.williamson.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.williamson.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.williamson.getBattingStatus());
 
 		assertEquals(9, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(12, gameData.latham.getBattingScore().getRuns());
 		assertEquals(8, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		checkTeamAndOverTotals(27, overNumber, 9, 0);
 	}
@@ -160,12 +160,12 @@ public class NzInnings {
 		assertEquals(10, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(13, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(0, gameData.taylor.getBattingScore().getBallsFaced());
 		assertEquals(0, gameData.taylor.getBattingScore().getRuns());
 		assertEquals(0, gameData.taylor.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.taylor.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.taylor.getBattingStatus());
 
 		checkTeamAndOverTotals(29, overNumber, 2, 0);
 	}
@@ -176,12 +176,12 @@ public class NzInnings {
 		assertEquals(16, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(17, gameData.latham.getBattingScore().getRuns());
 		assertEquals(4, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(0, gameData.taylor.getBattingScore().getBallsFaced());
 		assertEquals(0, gameData.taylor.getBattingScore().getRuns());
 		assertEquals(0, gameData.taylor.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.taylor.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.taylor.getBattingStatus());
 
 		checkTeamAndOverTotals(33, overNumber, 4, 0);
 	}
@@ -192,7 +192,7 @@ public class NzInnings {
 		assertEquals(16, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(17, gameData.latham.getBattingScore().getRuns());
 		assertEquals(0, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(1, gameData.taylor.getBattingScore().getBallsFaced());
 		assertEquals(0, gameData.taylor.getBattingScore().getRuns());
@@ -203,7 +203,7 @@ public class NzInnings {
 		assertEquals(5, gameData.anderson.getBattingScore().getBallsFaced());
 		assertEquals(0, gameData.anderson.getBattingScore().getRuns());
 		assertEquals(0, gameData.anderson.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.anderson.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.anderson.getBattingStatus());
 
 		checkTeamAndOverTotals(35, overNumber, 2, 2);
 	}
@@ -214,12 +214,12 @@ public class NzInnings {
 		assertEquals(20, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(18, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(7, gameData.anderson.getBattingScore().getBallsFaced());
 		assertEquals(0, gameData.anderson.getBattingScore().getRuns());
 		assertEquals(0, gameData.anderson.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.anderson.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.anderson.getBattingStatus());
 
 		checkTeamAndOverTotals(36, overNumber, 1, 0);
 	}
@@ -230,12 +230,12 @@ public class NzInnings {
 		assertEquals(21, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(19, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(12, gameData.anderson.getBattingScore().getBallsFaced());
 		assertEquals(4, gameData.anderson.getBattingScore().getRuns());
 		assertEquals(4, gameData.anderson.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.anderson.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.anderson.getBattingStatus());
 
 		checkTeamAndOverTotals(41, overNumber, 5, 0);
 	}
@@ -246,12 +246,12 @@ public class NzInnings {
 		assertEquals(27, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(20, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(12, gameData.anderson.getBattingScore().getBallsFaced());
 		assertEquals(4, gameData.anderson.getBattingScore().getRuns());
 		assertEquals(0, gameData.anderson.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.anderson.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.anderson.getBattingStatus());
 
 		checkTeamAndOverTotals(42, overNumber, 1, 0);
 	}
@@ -262,7 +262,7 @@ public class NzInnings {
 		assertEquals(29, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(21, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(14, gameData.anderson.getBattingScore().getBallsFaced());
 		assertEquals(4, gameData.anderson.getBattingScore().getRuns());
@@ -273,7 +273,7 @@ public class NzInnings {
 		assertEquals(2, gameData.ronchi.getBattingScore().getBallsFaced());
 		assertEquals(0, gameData.ronchi.getBattingScore().getRuns());
 		assertEquals(0, gameData.ronchi.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.ronchi.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.ronchi.getBattingStatus());
 
 		checkTeamAndOverTotals(43, overNumber, 1, 0);
 	}
@@ -284,12 +284,12 @@ public class NzInnings {
 		assertEquals(35, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(25, gameData.latham.getBattingScore().getRuns());
 		assertEquals(4, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(2, gameData.ronchi.getBattingScore().getBallsFaced());
 		assertEquals(0, gameData.ronchi.getBattingScore().getRuns());
 		assertEquals(0, gameData.ronchi.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.ronchi.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.ronchi.getBattingStatus());
 
 		checkTeamAndOverTotals(48, overNumber, 5, 1);
 	}
@@ -300,7 +300,7 @@ public class NzInnings {
 		assertEquals(38, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(25, gameData.latham.getBattingScore().getRuns());
 		assertEquals(0, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(3, gameData.ronchi.getBattingScore().getBallsFaced());
 		assertEquals(0, gameData.ronchi.getBattingScore().getRuns());
@@ -311,7 +311,7 @@ public class NzInnings {
 		assertEquals(2, gameData.neesham.getBattingScore().getBallsFaced());
 		assertEquals(1, gameData.neesham.getBattingScore().getRuns());
 		assertEquals(1, gameData.neesham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.neesham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.neesham.getBattingStatus());
 
 		checkTeamAndOverTotals(49, overNumber, 1, 0);
 	}
@@ -322,12 +322,12 @@ public class NzInnings {
 		assertEquals(40, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(27, gameData.latham.getBattingScore().getRuns());
 		assertEquals(2, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(6, gameData.neesham.getBattingScore().getBallsFaced());
 		assertEquals(2, gameData.neesham.getBattingScore().getRuns());
 		assertEquals(1, gameData.neesham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.neesham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.neesham.getBattingStatus());
 
 		checkTeamAndOverTotals(53, overNumber, 4, 1);
 	}
@@ -338,12 +338,12 @@ public class NzInnings {
 		assertEquals(41, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(28, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(11, gameData.neesham.getBattingScore().getBallsFaced());
 		assertEquals(3, gameData.neesham.getBattingScore().getRuns());
 		assertEquals(1, gameData.neesham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.neesham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.neesham.getBattingStatus());
 
 		checkTeamAndOverTotals(55, overNumber, 2, 0);
 	}
@@ -354,12 +354,12 @@ public class NzInnings {
 		assertEquals(45, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(29, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(13, gameData.neesham.getBattingScore().getBallsFaced());
 		assertEquals(4, gameData.neesham.getBattingScore().getRuns());
 		assertEquals(1, gameData.neesham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.neesham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.neesham.getBattingStatus());
 
 		checkTeamAndOverTotals(57, overNumber, 2, 0);
 	}
@@ -370,12 +370,12 @@ public class NzInnings {
 		assertEquals(46, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(30, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(18, gameData.neesham.getBattingScore().getBallsFaced());
 		assertEquals(5, gameData.neesham.getBattingScore().getRuns());
 		assertEquals(1, gameData.neesham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.neesham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.neesham.getBattingStatus());
 
 		checkTeamAndOverTotals(59, overNumber, 2, 0);
 	}
@@ -386,12 +386,12 @@ public class NzInnings {
 		assertEquals(48, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(30, gameData.latham.getBattingScore().getRuns());
 		assertEquals(0, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(22, gameData.neesham.getBattingScore().getBallsFaced());
 		assertEquals(10, gameData.neesham.getBattingScore().getRuns());
 		assertEquals(5, gameData.neesham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.neesham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.neesham.getBattingStatus());
 
 		checkTeamAndOverTotals(65, overNumber, 6, 1);
 	}
@@ -402,7 +402,7 @@ public class NzInnings {
 		assertEquals(49, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(30, gameData.latham.getBattingScore().getRuns());
 		assertEquals(0, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(25, gameData.neesham.getBattingScore().getBallsFaced());
 		assertEquals(10, gameData.neesham.getBattingScore().getRuns());
@@ -419,7 +419,7 @@ public class NzInnings {
 		assertEquals(1, gameData.bracewell.getBattingScore().getBallsFaced());
 		assertEquals(1, gameData.bracewell.getBattingScore().getRuns());
 		assertEquals(1, gameData.bracewell.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.bracewell.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.bracewell.getBattingStatus());
 
 		checkTeamAndOverTotals(66, overNumber, 1, 0);
 	}
@@ -430,12 +430,12 @@ public class NzInnings {
 		assertEquals(50, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(31, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(6, gameData.bracewell.getBattingScore().getBallsFaced());
 		assertEquals(2, gameData.bracewell.getBattingScore().getRuns());
 		assertEquals(1, gameData.bracewell.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.bracewell.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.bracewell.getBattingStatus());
 
 		checkTeamAndOverTotals(68, overNumber, 2, 0);
 	}
@@ -446,12 +446,12 @@ public class NzInnings {
 		assertEquals(53, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(33, gameData.latham.getBattingScore().getRuns());
 		assertEquals(2, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(9, gameData.bracewell.getBattingScore().getBallsFaced());
 		assertEquals(3, gameData.bracewell.getBattingScore().getRuns());
 		assertEquals(1, gameData.bracewell.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.bracewell.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.bracewell.getBattingStatus());
 
 		checkTeamAndOverTotals(71, overNumber, 3, 0);
 	}
@@ -462,12 +462,12 @@ public class NzInnings {
 		assertEquals(55, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(34, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(13, gameData.bracewell.getBattingScore().getBallsFaced());
 		assertEquals(4, gameData.bracewell.getBattingScore().getRuns());
 		assertEquals(1, gameData.bracewell.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.bracewell.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.bracewell.getBattingStatus());
 
 		checkTeamAndOverTotals(73, overNumber, 2, 0);
 	}
@@ -478,12 +478,12 @@ public class NzInnings {
 		assertEquals(60, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(37, gameData.latham.getBattingScore().getRuns());
 		assertEquals(3, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(14, gameData.bracewell.getBattingScore().getBallsFaced());
 		assertEquals(5, gameData.bracewell.getBattingScore().getRuns());
 		assertEquals(1, gameData.bracewell.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.bracewell.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.bracewell.getBattingStatus());
 
 		checkTeamAndOverTotals(78, overNumber, 5, 1);
 	}
@@ -494,12 +494,12 @@ public class NzInnings {
 		assertEquals(61, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(38, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(19, gameData.bracewell.getBattingScore().getBallsFaced());
 		assertEquals(5, gameData.bracewell.getBattingScore().getRuns());
 		assertEquals(0, gameData.bracewell.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.bracewell.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.bracewell.getBattingStatus());
 
 		checkTeamAndOverTotals(79, overNumber, 1, 0);
 	}
@@ -510,12 +510,12 @@ public class NzInnings {
 		assertEquals(65, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(39, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(21, gameData.bracewell.getBattingScore().getBallsFaced());
 		assertEquals(6, gameData.bracewell.getBattingScore().getRuns());
 		assertEquals(1, gameData.bracewell.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.bracewell.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.bracewell.getBattingStatus());
 
 		checkTeamAndOverTotals(81, overNumber, 2, 0);
 	}
@@ -526,12 +526,12 @@ public class NzInnings {
 		assertEquals(67, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(40, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(25, gameData.bracewell.getBattingScore().getBallsFaced());
 		assertEquals(7, gameData.bracewell.getBattingScore().getRuns());
 		assertEquals(1, gameData.bracewell.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.bracewell.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.bracewell.getBattingStatus());
 
 		checkTeamAndOverTotals(83, overNumber, 2, 0);
 	}
@@ -542,12 +542,12 @@ public class NzInnings {
 		assertEquals(69, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(42, gameData.latham.getBattingScore().getRuns());
 		assertEquals(2, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(29, gameData.bracewell.getBattingScore().getBallsFaced());
 		assertEquals(9, gameData.bracewell.getBattingScore().getRuns());
 		assertEquals(2, gameData.bracewell.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.bracewell.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.bracewell.getBattingStatus());
 
 		checkTeamAndOverTotals(88, overNumber, 5, 1);
 	}
@@ -558,12 +558,12 @@ public class NzInnings {
 		assertEquals(73, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(47, gameData.latham.getBattingScore().getRuns());
 		assertEquals(5, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(31, gameData.bracewell.getBattingScore().getBallsFaced());
 		assertEquals(11, gameData.bracewell.getBattingScore().getRuns());
 		assertEquals(2, gameData.bracewell.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.bracewell.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.bracewell.getBattingStatus());
 
 		checkTeamAndOverTotals(95, overNumber, 7, 0);
 	}
@@ -574,12 +574,12 @@ public class NzInnings {
 		assertEquals(76, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(49, gameData.latham.getBattingScore().getRuns());
 		assertEquals(2, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(34, gameData.bracewell.getBattingScore().getBallsFaced());
 		assertEquals(13, gameData.bracewell.getBattingScore().getRuns());
 		assertEquals(2, gameData.bracewell.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.bracewell.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.bracewell.getBattingStatus());
 
 		checkTeamAndOverTotals(99, overNumber, 4, 0);
 	}
@@ -590,12 +590,12 @@ public class NzInnings {
 		assertEquals(78, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(51, gameData.latham.getBattingScore().getRuns());
 		assertEquals(2, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(38, gameData.bracewell.getBattingScore().getBallsFaced());
 		assertEquals(14, gameData.bracewell.getBattingScore().getRuns());
 		assertEquals(1, gameData.bracewell.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.bracewell.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.bracewell.getBattingStatus());
 
 		checkTeamAndOverTotals(102, overNumber, 3, 0);
 	}
@@ -606,12 +606,12 @@ public class NzInnings {
 		assertEquals(80, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(53, gameData.latham.getBattingScore().getRuns());
 		assertEquals(2, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(42, gameData.bracewell.getBattingScore().getBallsFaced());
 		assertEquals(15, gameData.bracewell.getBattingScore().getRuns());
 		assertEquals(1, gameData.bracewell.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.bracewell.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.bracewell.getBattingStatus());
 
 		checkTeamAndOverTotals(105, overNumber, 3, 0);
 	}
@@ -622,7 +622,7 @@ public class NzInnings {
 		assertEquals(81, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(54, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(46, gameData.bracewell.getBattingScore().getBallsFaced());
 		assertEquals(15, gameData.bracewell.getBattingScore().getRuns());
@@ -633,7 +633,7 @@ public class NzInnings {
 		assertEquals(1, gameData.southee.getBattingScore().getBallsFaced());
 		assertEquals(1, gameData.southee.getBattingScore().getRuns());
 		assertEquals(1, gameData.southee.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.southee.getBattingStatus()); // BUG
+		assertEquals(BattingStatus.NonStriker, gameData.southee.getBattingStatus()); // BUG
 
 		checkTeamAndOverTotals(107, overNumber, 2, 0);
 	}
@@ -644,12 +644,12 @@ public class NzInnings {
 		assertEquals(81, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(54, gameData.latham.getBattingScore().getRuns());
 		assertEquals(0, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(7, gameData.southee.getBattingScore().getBallsFaced());
 		assertEquals(1, gameData.southee.getBattingScore().getRuns());
 		assertEquals(0, gameData.southee.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.southee.getBattingStatus()); // BUG
+		assertEquals(BattingStatus.Striker, gameData.southee.getBattingStatus()); // BUG
 
 		checkTeamAndOverTotals(107, overNumber, 0, 0);
 	}
@@ -660,12 +660,12 @@ public class NzInnings {
 		assertEquals(83, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(55, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(11, gameData.southee.getBattingScore().getBallsFaced());
 		assertEquals(2, gameData.southee.getBattingScore().getRuns());
 		assertEquals(1, gameData.southee.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.southee.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.southee.getBattingStatus());
 
 		checkTeamAndOverTotals(109, overNumber, 2, 0);
 	}
@@ -676,12 +676,12 @@ public class NzInnings {
 		assertEquals(84, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(56, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(16, gameData.southee.getBattingScore().getBallsFaced());
 		assertEquals(11, gameData.southee.getBattingScore().getRuns());
 		assertEquals(9, gameData.southee.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.southee.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.southee.getBattingStatus());
 
 		checkTeamAndOverTotals(119, overNumber, 10, 0);
 	}
@@ -692,12 +692,12 @@ public class NzInnings {
 		assertEquals(86, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(58, gameData.latham.getBattingScore().getRuns());
 		assertEquals(2, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(20, gameData.southee.getBattingScore().getBallsFaced());
 		assertEquals(17, gameData.southee.getBattingScore().getRuns());
 		assertEquals(6, gameData.southee.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.southee.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.southee.getBattingStatus());
 
 		checkTeamAndOverTotals(127, overNumber, 8, 0);
 	}
@@ -708,12 +708,12 @@ public class NzInnings {
 		assertEquals(87, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(59, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(25, gameData.southee.getBattingScore().getBallsFaced());
 		assertEquals(24, gameData.southee.getBattingScore().getRuns());
 		assertEquals(7, gameData.southee.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.southee.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.southee.getBattingStatus());
 
 		checkTeamAndOverTotals(135, overNumber, 8, 0);
 	}
@@ -724,12 +724,12 @@ public class NzInnings {
 		assertEquals(89, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(60, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(29, gameData.southee.getBattingScore().getBallsFaced());
 		assertEquals(31, gameData.southee.getBattingScore().getRuns());
 		assertEquals(7, gameData.southee.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.southee.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.southee.getBattingStatus());
 
 		checkTeamAndOverTotals(143, overNumber, 8, 0);
 	}
@@ -740,12 +740,12 @@ public class NzInnings {
 		assertEquals(89, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(60, gameData.latham.getBattingScore().getRuns());
 		assertEquals(0, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(35, gameData.southee.getBattingScore().getBallsFaced());
 		assertEquals(37, gameData.southee.getBattingScore().getRuns());
 		assertEquals(6, gameData.southee.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.southee.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.southee.getBattingStatus());
 
 		checkTeamAndOverTotals(151, overNumber, 8, 2);
 	}
@@ -756,12 +756,12 @@ public class NzInnings {
 		assertEquals(91, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(62, gameData.latham.getBattingScore().getRuns());
 		assertEquals(2, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(39, gameData.southee.getBattingScore().getBallsFaced());
 		assertEquals(49, gameData.southee.getBattingScore().getRuns());
 		assertEquals(12, gameData.southee.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.southee.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.southee.getBattingStatus());
 
 		checkTeamAndOverTotals(165, overNumber, 14, 0);
 	}
@@ -772,12 +772,12 @@ public class NzInnings {
 		assertEquals(94, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(67, gameData.latham.getBattingScore().getRuns());
 		assertEquals(5, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(42, gameData.southee.getBattingScore().getBallsFaced());
 		assertEquals(51, gameData.southee.getBattingScore().getRuns());
 		assertEquals(2, gameData.southee.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.southee.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.southee.getBattingStatus());
 
 		checkTeamAndOverTotals(173, overNumber, 8, 1);
 	}
@@ -788,7 +788,7 @@ public class NzInnings {
 		assertEquals(95, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(68, gameData.latham.getBattingScore().getRuns());
 		assertEquals(1, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
 
 		assertEquals(45, gameData.southee.getBattingScore().getBallsFaced());
 		assertEquals(55, gameData.southee.getBattingScore().getRuns());
@@ -799,7 +799,7 @@ public class NzInnings {
 		assertEquals(2, gameData.sodhi.getBattingScore().getBallsFaced());
 		assertEquals(1, gameData.sodhi.getBattingScore().getRuns());
 		assertEquals(1, gameData.sodhi.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.sodhi.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.sodhi.getBattingStatus());
 
 		checkTeamAndOverTotals(179, overNumber, 6, 0);
 	}
@@ -810,12 +810,12 @@ public class NzInnings {
 		assertEquals(95, gameData.latham.getBattingScore().getBallsFaced());
 		assertEquals(68, gameData.latham.getBattingScore().getRuns());
 		assertEquals(0, gameData.latham.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.Striker, gameData.latham.getBattingStatus());
+		assertEquals(BattingStatus.NonStriker, gameData.latham.getBattingStatus());
 
 		assertEquals(8, gameData.sodhi.getBattingScore().getBallsFaced());
 		assertEquals(1, gameData.sodhi.getBattingScore().getRuns());
 		assertEquals(0, gameData.sodhi.getBattingScore().getRunsForOver(overNumber));
-		assertEquals(BattingStatus.NonStriker, gameData.sodhi.getBattingStatus());
+		assertEquals(BattingStatus.Striker, gameData.sodhi.getBattingStatus());
 
 		checkTeamAndOverTotals(179, overNumber, 0, 0);
 	}

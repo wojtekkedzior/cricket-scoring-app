@@ -183,6 +183,7 @@ public class Wicket extends GenericActivity {
 	};
 	
 	@Override 
+	//This needs to return any changes back to thes coring screen and not the whole Team object.
 	public void onDone(View view) {
 		Intent intent = new Intent();
 		

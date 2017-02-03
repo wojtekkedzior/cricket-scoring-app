@@ -60,8 +60,8 @@ public class ScoringTest extends ScoringScreenTestBase {
 		
 		selectRuns(6);
 		checkCurrentBowler("Mills", "1", "0", "0", "21", "21.00", "1", "1", "0", "0");
-		checkStriker("Masakadza", "10", "333.33", "3", "1", "0");
-		checkNonStriker("Chibhabha", "11", "366.67", "3", "0", "1");
+		checkStriker("Chibhabha", "11", "366.67", "3", "0", "1");
+		checkNonStriker("Masakadza", "10", "333.33", "3", "1", "0");
 		assertEquals("1  2  3  4  5  6  ", overSummary.getText().toString());
 	}
 	

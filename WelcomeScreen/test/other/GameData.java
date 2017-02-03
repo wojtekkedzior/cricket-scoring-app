@@ -124,7 +124,10 @@ public class GameData {
 
 		guptill.setBattingStatus(BattingStatus.Striker);
 		brendonMcCullum.setBattingStatus(BattingStatus.NonStriker);
-
+		
+		gameProcessor.startNewInnings();
+		gameProcessor.updateGame(game);
+		
 		firstNZOver();
 		secondNZOver();
 		thirdNZOver();
@@ -144,6 +147,7 @@ public class GameData {
 	}
 
 	private void firstOver() {
+		
 		mills.setBowlingStatus(BowlingStatus.CurrentlyBowling);
 
 		gameProcessor.delivery(BallType.DOT_BALL, 0, 0, 0);
@@ -419,7 +423,6 @@ public class GameData {
 	}
 
 	private void firstNZOver() {
-		gameProcessor.startNewOver();
 		kyleJarvis.setBowlingStatus(BowlingStatus.CurrentlyBowling);
 
 		gameProcessor.delivery(BallType.NO_BALL_EXTRA, 0, 0, 0);

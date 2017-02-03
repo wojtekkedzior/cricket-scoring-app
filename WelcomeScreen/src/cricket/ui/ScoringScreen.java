@@ -73,6 +73,11 @@ public class ScoringScreen extends GenericActivity {
 		IMyEventListener mEventListener = new IMyEventListener() {
 			@Override
 			public void onEventOccured(float rawX, float rawY) {
+				//The new over check needs to be here, becase if it's changed the updated team object is not sent to other views
+				//once all other view no longer depend on the team object, this check can go somewhere else
+				if(gameProcessor.isOverFinished()) { //start new over
+					gameProcessor.startNewOver();
+				}
 				showScoringScreen();
 			}
 		};
@@ -107,10 +112,6 @@ public class ScoringScreen extends GenericActivity {
 			if(requestCode == Keys.SCORING_SCREEN) {
 				int runs = data.getExtras().getInt(Keys.RUNS);
 				BallType ballType = (BallType) data.getExtras().getSerializable(Keys.BALL_TYPE);
-				
-				if(gameProcessor.isOverFinished()) { //start new over
-					gameProcessor.startNewOver();
-				}
 				
 				boolean isWicket = data.getExtras().getBoolean(Keys.IS_WICKET);
 				if(isWicket) {

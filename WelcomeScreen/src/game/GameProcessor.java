@@ -93,10 +93,6 @@ public class GameProcessor implements Serializable {
 	
 	private void completeScore(BallType ballType) {
 		overTracker.updateOver(ballType);
-		
-		if(overTracker.isOverFinished() ) {
-			battingTeam.alternateStriker();
-		}
 	}
 
 	public void dismisal(DismisalType dismisalType, Player fielder, int runs) {
@@ -278,6 +274,7 @@ public class GameProcessor implements Serializable {
 	}
 
 	public void startNewOver() {
+		battingTeam.alternateStriker();
 		overTracker.startNewOver();
 	}
 

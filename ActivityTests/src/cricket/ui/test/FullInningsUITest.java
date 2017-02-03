@@ -85,8 +85,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		clickButton(ButtonType.Dot);
 		
 		checkCurrentBowler(testData.mills.getName(), "1", "0", "0", "1", "1.00", "0", "0", "0", "0");
-		checkStriker(testData.masakadza.getName(), "1", "50.00", "2", "0", "0");
-		checkNonStriker(testData.chibhabha.getName(), "0", "0.00", "4", "0", "0");
+		checkNonStriker(testData.masakadza.getName(), "1", "50.00", "2", "0", "0");
+		checkStriker(testData.chibhabha.getName(), "0", "0.00", "4", "0", "0");
 	}
 	
 	private void secondOver() {
@@ -101,8 +101,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.bracewell.getName(), "1", "0", "0", "9", "9.00", "0", "1", "0", "0");
 		
-		checkStriker(testData.masakadza.getName(), "9", "150.00", "6", "0", "1");
-		checkNonStriker(testData.chibhabha.getName(), "1", "16.67", "6", "0", "0");
+		checkNonStriker(testData.masakadza.getName(), "9", "150.00", "6", "0", "1");
+		checkStriker(testData.chibhabha.getName(), "1", "16.67", "6", "0", "0");
 	}
 	
 	private void thirdOver() {
@@ -117,8 +117,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.mills.getName(), "2", "0", "1", "9", "4.50", "2", "0", "0", "0");
 		
-		checkStriker(testData.brendonTaylor.getName(), "0", "0.00", "0", "0", "0");
-		checkNonStriker(testData.chibhabha.getName(), "9", "81.82", "11", "2", "0");
+		checkNonStriker(testData.brendonTaylor.getName(), "0", "0.00", "0", "0", "0");
+		checkStriker(testData.chibhabha.getName(), "9", "81.82", "11", "2", "0");
 	}
 	
 	private void fourthOver() {
@@ -133,8 +133,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.bracewell.getName(), "2", "0", "0", "13", "6.50", "1", "1", "0", "0");
 		
-		checkStriker(testData.chibhabha.getName(), "9", "81.82", "11", "2", "0");
-		checkNonStriker(testData.brendonTaylor.getName(), "4", "66.67", "6", "1", "0");
+		checkNonStriker(testData.chibhabha.getName(), "9", "81.82", "11", "2", "0");
+		checkStriker(testData.brendonTaylor.getName(), "4", "66.67", "6", "1", "0");
 	}
 	
 	private void fithOver() {
@@ -149,8 +149,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.mills.getName(), "3", "0", "2", "12", "4.00", "2", "0", "0", "0");
 		
-		checkStriker(testData.mutizwa.getName(), "2", "50.00", "4", "0", "0");
-		checkNonStriker(testData.brendonTaylor.getName(), "5", "71.43", "7", "1", "0");
+		checkNonStriker(testData.mutizwa.getName(), "2", "50.00", "4", "0", "0");
+		checkStriker(testData.brendonTaylor.getName(), "5", "71.43", "7", "1", "0");
 	}
 	
 	private void sitxthOver() {
@@ -165,8 +165,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.oram.getName(), "1", "0", "0", "9", "9.00", "1", "0", "0", "0");
 		
-		checkStriker(testData.mutizwa.getName(), "10", "111.11", "9", "1", "0");
-		checkNonStriker(testData.brendonTaylor.getName(), "6", "75.00", "8", "1", "0");
+		checkNonStriker(testData.mutizwa.getName(), "10", "111.11", "9", "1", "0");
+		checkStriker(testData.brendonTaylor.getName(), "6", "75.00", "8", "1", "0");
 	}
 	
 	private void seventhOver() {
@@ -181,8 +181,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.woodcock.getName(), "1", "0", "0", "5", "5.00", "0", "0", "0", "0");
 		
-		checkStriker(testData.mutizwa.getName(), "13", "108.33", "12", "1", "0");
-		checkNonStriker(testData.brendonTaylor.getName(), "8", "72.73", "11", "1", "0");
+		checkNonStriker(testData.mutizwa.getName(), "13", "108.33", "12", "1", "0");
+		checkStriker(testData.brendonTaylor.getName(), "8", "72.73", "11", "1", "0");
 	}
 	
 	private void eighthOver() {
@@ -197,8 +197,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.oram.getName(), "2", "0", "0", "14", "7.00", "1", "0", "0", "0");
 		
-		checkStriker(testData.mutizwa.getName(), "15", "107.14", "14", "1", "0");
-		checkNonStriker(testData.brendonTaylor.getName(), "11", "73.33", "15", "1", "0");
+		checkNonStriker(testData.mutizwa.getName(), "15", "107.14", "14", "1", "0");
+		checkStriker(testData.brendonTaylor.getName(), "11", "73.33", "15", "1", "0");
 	}
 	
 	private void ninthOver() {
@@ -213,8 +213,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.woodcock.getName(), "2", "0", "1", "12", "6.00", "1", "0", "0", "0");
 		
-		checkStriker(testData.waller.getName(), "1", "50.00", "2", "0", "0");
-		checkNonStriker(testData.brendonTaylor.getName(), "16", "94.12", "17", "2", "0");
+		checkNonStriker(testData.waller.getName(), "1", "50.00", "2", "0", "0");
+		checkStriker(testData.brendonTaylor.getName(), "16", "94.12", "17", "2", "0");
 	}
 	
 	private void tenthOver() {
@@ -229,8 +229,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.nathanMcCullum.getName(), "1", "0", "0", "6", "6.00", "1", "0", "0", "0");
 		
-		checkStriker(testData.brendonTaylor.getName(), "21", "95.45", "22", "3", "0");
-		checkNonStriker(testData.waller.getName(), "2", "66.67", "3", "0", "0");
+		checkNonStriker(testData.brendonTaylor.getName(), "21", "95.45", "22", "3", "0");
+		checkStriker(testData.waller.getName(), "2", "66.67", "3", "0", "0");
 	}
 	
 	private void eleventhOver() {
@@ -245,8 +245,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.woodcock.getName(), "3", "0", "1", "19", "6.33", "1", "0", "0", "0");
 		
-		checkStriker(testData.brendonTaylor.getName(), "26", "104.00", "25", "3", "0");
-		checkNonStriker(testData.waller.getName(), "4", "66.67", "6", "0", "0");
+		checkNonStriker(testData.brendonTaylor.getName(), "26", "104.00", "25", "3", "0");
+		checkStriker(testData.waller.getName(), "4", "66.67", "6", "0", "0");
 	}
 	
 	private void twelthOver() {
@@ -261,8 +261,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.nathanMcCullum.getName(), "2", "0", "1", "14", "7.00", "1", "1", "0", "0");
 		
-		checkStriker(testData.brendonTaylor.getName(), "28", "103.70", "27", "3", "0");
-		checkNonStriker(testData.coventry.getName(), "0", "0.00", "0", "0", "0");
+		checkNonStriker(testData.brendonTaylor.getName(), "28", "103.70", "27", "3", "0");
+		checkStriker(testData.coventry.getName(), "0", "0.00", "0", "0", "0");
 	}
 	
 	private void thirteenthOver() {
@@ -279,8 +279,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.franklin.getName(), "1", "0", "0", "10", "10.00", "1", "0", "0", "2");
 		
-		checkStriker(testData.coventry.getName(), "2", "50.00", "4", "0", "0");
-		checkNonStriker(testData.brendonTaylor.getName(), "34", "109.68", "31", "4", "0");
+		checkNonStriker(testData.coventry.getName(), "2", "50.00", "4", "0", "0");
+		checkStriker(testData.brendonTaylor.getName(), "34", "109.68", "31", "4", "0");
 	}
 	
 	private void fourteenthOver() {
@@ -295,8 +295,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.mills.getName(), "4", "0", "2", "15", "3.75", "2", "0", "0", "0");
 		
-		checkStriker(testData.coventry.getName(), "4", "50.00", "8", "0", "0");
-		checkNonStriker(testData.brendonTaylor.getName(), "35", "106.06", "33", "4", "0");
+		checkNonStriker(testData.coventry.getName(), "4", "50.00", "8", "0", "0");
+		checkStriker(testData.brendonTaylor.getName(), "35", "106.06", "33", "4", "0");
 	}
 	
 	private void fithteenthOver() {
@@ -311,8 +311,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.woodcock.getName(), "4", "0", "1", "30", "7.50", "3", "0", "0", "0");
 		
-		checkStriker(testData.coventry.getName(), "10", "83.33", "12", "1", "0");
-		checkNonStriker(testData.brendonTaylor.getName(), "40", "114.29", "35", "5", "0");
+		checkNonStriker(testData.coventry.getName(), "10", "83.33", "12", "1", "0");
+		checkStriker(testData.brendonTaylor.getName(), "40", "114.29", "35", "5", "0");
 	}
 	
 	private void sixteenthOver() {
@@ -327,8 +327,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.nathanMcCullum.getName(), "3", "0", "2", "17", "5.67", "1", "1", "0", "0");
 		
-		checkStriker(testData.brendonTaylor.getName(), "42", "107.69", "39", "5", "0");
-		checkNonStriker(testData.chigumbura.getName(), "1", "100.00", "1", "0", "0");
+		checkNonStriker(testData.brendonTaylor.getName(), "42", "107.69", "39", "5", "0");
+		checkStriker(testData.chigumbura.getName(), "1", "100.00", "1", "0", "0");
 	}
 	
 	private void seventeenthOver() {
@@ -345,8 +345,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.bracewell.getName(), "3", "0", "0", "21", "7.00", "1", "1", "0", "1");
 		
-		checkStriker(testData.brendonTaylor.getName(), "43", "107.50", "40", "5", "0");
-		checkNonStriker(testData.chigumbura.getName(), "7", "100.00", "7", "0", "0");
+		checkNonStriker(testData.brendonTaylor.getName(), "43", "107.50", "40", "5", "0");
+		checkStriker(testData.chigumbura.getName(), "7", "100.00", "7", "0", "0");
 	}
 
 	private void eighteentOver() {
@@ -361,8 +361,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 
 		checkCurrentBowler(testData.oram.getName(), "3", "0", "0", "21", "7.00", "1", "0", "0", "0");
 		
-		checkStriker(testData.brendonTaylor.getName(), "47", "109.30", "43", "5", "0");
-		checkNonStriker(testData.chigumbura.getName(), "10", "100.00", "10", "0", "0");
+		checkNonStriker(testData.brendonTaylor.getName(), "47", "109.30", "43", "5", "0");
+		checkStriker(testData.chigumbura.getName(), "10", "100.00", "10", "0", "0");
 	}
 	
 	private void nineteenthOver() {
@@ -377,8 +377,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.bracewell.getName(), "4", "0", "1", "26", "6.50", "2", "1", "0", "1");
 		
-		checkStriker(testData.chakabva.getName(), "0", "0.00", "0", "0", "0");
-		checkNonStriker(testData.brendonTaylor.getName(), "48", "109.09", "44", "5", "0");
+		checkNonStriker(testData.chakabva.getName(), "0", "0.00", "0", "0", "0");
+		checkStriker(testData.brendonTaylor.getName(), "48", "109.09", "44", "5", "0");
 	}
 	
 	private void twentiethOver() {
@@ -395,8 +395,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		selectWicket(false, DismisalType.NON_STRIKER_RUNOUT);
 		checkCurrentBowler(testData.oram.getName(), "4", "0", "1", "25", "6.25", "1", "0", "1", "0");
 		
-		checkStriker(testData.rayPrice.getName(), "0", "0.00", "0", "0", "0");
-		checkNonStriker(testData.brendonTaylor.getName(), "50", "108.70", "46", "5", "0");
+		checkNonStriker(testData.rayPrice.getName(), "0", "0.00", "0", "0", "0");
+		checkStriker(testData.brendonTaylor.getName(), "50", "108.70", "46", "5", "0");
 	}
 	
 	private void checkInningsFinished() throws IllegalArgumentException, IllegalAccessException, NoSuchFieldException {
@@ -481,8 +481,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.kyleJarvis.getName(), "1", "0", "0", "5", "5.00", "0", "0", "2", "1");
 		
-		checkStriker(testData.brendonMcCullum.getName(), "0", "0.00", "0", "0", "0");
-		checkNonStriker(testData.guptill.getName(), "2", "28.57", "7", "0", "0");
+		checkNonStriker(testData.brendonMcCullum.getName(), "0", "0.00", "0", "0", "0");
+		checkStriker(testData.guptill.getName(), "2", "28.57", "7", "0", "0");
 	}
 
 	private void secondNZOver() {
@@ -497,8 +497,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 
 		checkCurrentBowler(testData.rayPrice.getName(), "1", "0", "0", "5", "5.00", "0", "0", "0", "0");
 		
-		checkStriker(testData.brendonMcCullum.getName(), "2", "50.00", "4", "0", "0");
-		checkNonStriker(testData.guptill.getName(), "5", "55.56", "9", "0", "0");
+		checkNonStriker(testData.brendonMcCullum.getName(), "2", "50.00", "4", "0", "0");
+		checkStriker(testData.guptill.getName(), "5", "55.56", "9", "0", "0");
 	}
 	
 	private void thirdNZOver() {
@@ -513,8 +513,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 
 		checkCurrentBowler("Jarvis", "2", "0", "0", "17", "8.50", "1", "1", "2", "1");
 		
-		checkStriker(testData.guptill.getName(), "6", "54.55", "11", "0", "0");
-		checkNonStriker(testData.brendonMcCullum.getName(), "13", "162.50", "8", "1", "1");
+		checkNonStriker(testData.guptill.getName(), "6", "54.55", "11", "0", "0");
+		checkStriker(testData.brendonMcCullum.getName(), "13", "162.50", "8", "1", "1");
 	}
 	
 	private void fourthNZOver() {
@@ -529,8 +529,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.rayPrice.getName(), "2", "0", "0", "11", "5.50", "1", "0", "0", "0");
 		
-		checkStriker(testData.guptill.getName(), "8", "53.33", "15", "0", "0");
-		checkNonStriker(testData.brendonMcCullum.getName(), "17", "170.00", "10", "2", "1");
+		checkNonStriker(testData.guptill.getName(), "8", "53.33", "15", "0", "0");
+		checkStriker(testData.brendonMcCullum.getName(), "17", "170.00", "10", "2", "1");
 	}
 	
 	private void fithNZOver() {
@@ -546,8 +546,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.chigumbura.getName(), "1", "0", "0", "6", "6.00", "0", "0", "1", "0");
 		
-		checkStriker(testData.guptill.getName(), "10", "55.56", "18", "0", "0");
-		checkNonStriker(testData.brendonMcCullum.getName(), "20", "153.85", "13", "2", "1");
+		checkNonStriker(testData.guptill.getName(), "10", "55.56", "18", "0", "0");
+		checkStriker(testData.brendonMcCullum.getName(), "20", "153.85", "13", "2", "1");
 	}
 	
 	private void sixthNZOver() {
@@ -562,8 +562,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 
 		checkCurrentBowler(testData.rayPrice.getName(), "3", "0", "0", "19", "6.33", "1", "1", "0", "0");
 		
-		checkNonStriker(testData.guptill.getName(), "17", "85.00", "20", "0", "1");
-		checkStriker(testData.brendonMcCullum.getName(), "21", "123.53", "17", "2", "1");
+		checkStriker(testData.guptill.getName(), "17", "85.00", "20", "0", "1");
+		checkNonStriker(testData.brendonMcCullum.getName(), "21", "123.53", "17", "2", "1");
 	}
 	
 	private void seventhNZOver() {
@@ -579,8 +579,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 
 		checkCurrentBowler(testData.chigumbura.getName(), "2", "0", "0", "12", "6.00", "0", "0", "1", "0");
 		
-		checkStriker(testData.guptill.getName(), "19", "86.36", "22", "0", "1");
-		checkNonStriker(testData.brendonMcCullum.getName(), "25", "119.05", "21", "2", "1");
+		checkNonStriker(testData.guptill.getName(), "19", "86.36", "22", "0", "1");
+		checkStriker(testData.brendonMcCullum.getName(), "25", "119.05", "21", "2", "1");
 	}
 	
 	private void eightNZOver() {
@@ -596,8 +596,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 
 		checkCurrentBowler(testData.utseya.getName(), "1", "0", "0", "4", "4.00", "0", "0", "0", "0");
 		
-		checkNonStriker(testData.guptill.getName(), "21", "84.00", "25", "0", "1");
-		checkStriker(testData.brendonMcCullum.getName(), "27", "112.50", "24", "2", "1");
+		checkStriker(testData.guptill.getName(), "21", "84.00", "25", "0", "1");
+		checkNonStriker(testData.brendonMcCullum.getName(), "27", "112.50", "24", "2", "1");
 	}
 	
 	private void ninthtNZOver() {
@@ -612,8 +612,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 
 		checkCurrentBowler(testData.chigumbura.getName(), "3", "0", "0", "28", "9.33", "2", "1", "1", "0");
 		
-		checkStriker(testData.guptill.getName(), "22", "84.62", "26", "0", "1");
-		checkNonStriker(testData.brendonMcCullum.getName(), "42", "144.83", "29", "4", "2");
+		checkNonStriker(testData.guptill.getName(), "22", "84.62", "26", "0", "1");
+		checkStriker(testData.brendonMcCullum.getName(), "42", "144.83", "29", "4", "2");
 	}
 	
 	private void tenthNZOver() {
@@ -628,8 +628,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 
 		checkCurrentBowler(testData.utseya.getName(), "2", "0", "0", "10", "5.00", "1", "0", "0", "0");
 		
-		checkNonStriker(testData.guptill.getName(), "27", "93.10", "29", "1", "1");
-		checkStriker(testData.brendonMcCullum.getName(), "43", "134.38", "32", "4", "2");
+		checkStriker(testData.guptill.getName(), "27", "93.10", "29", "1", "1");
+		checkNonStriker(testData.brendonMcCullum.getName(), "43", "134.38", "32", "4", "2");
 	}
 	
 	private void eleventhNZOver() {
@@ -645,8 +645,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.kyleJarvis.getName(), "3", "0", "0", "32", "10.67", "2", "2", "3", "1");
 		
-		checkStriker(testData.guptill.getName(), "27", "93.10", "29", "1", "1");
-		checkNonStriker(testData.brendonMcCullum.getName(), "57", "150.00", "38", "5", "3");
+		checkNonStriker(testData.guptill.getName(), "27", "93.10", "29", "1", "1");
+		checkStriker(testData.brendonMcCullum.getName(), "57", "150.00", "38", "5", "3");
 	}
 	
 	private void twelthNZOver() {
@@ -661,8 +661,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.chibhabha.getName(), "1", "0", "0", "20", "20.00", "1", "2", "0", "0");
 		
-		checkNonStriker(testData.guptill.getName(), "32", "103.23", "31", "2", "1");
-		checkStriker(testData.brendonMcCullum.getName(), "72", "171.43", "42", "5", "5");
+		checkStriker(testData.guptill.getName(), "32", "103.23", "31", "2", "1");
+		checkNonStriker(testData.brendonMcCullum.getName(), "72", "171.43", "42", "5", "5");
 	}
 	
 	private void thirteenthNZOver() {
@@ -677,8 +677,8 @@ public class FullInningsUITest extends ScoringScreenTestBase {
 		
 		checkCurrentBowler(testData.masakadza.getName(), "1", "0", "0", "10", "10.00", "0", "1", "0", "0");
 		
-		checkStriker(testData.guptill.getName(), "39", "114.71", "34", "2", "2");
-		checkNonStriker(testData.brendonMcCullum.getName(), "75", "166.67", "45", "5", "5");
+		checkNonStriker(testData.guptill.getName(), "39", "114.71", "34", "2", "2");
+		checkStriker(testData.brendonMcCullum.getName(), "75", "166.67", "45", "5", "5");
 	}
 	
 	private void fourteenthNZOver() {

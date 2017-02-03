@@ -52,11 +52,10 @@ public class GameOverTest extends TestBase<GameOver> {
 		assertEquals("Mutizwa 16/16", ((TextView) activity.findViewById(R.id.team2SecondBatsman)).getText().toString());
 		
 		//bowlers //TODO
-		assertEquals("Nathan McCullum  3-0-17-2", ((TextView) activity.findViewById(R.id.team1TopBowler)).getText().toString());
-		assertEquals("Mills  4-0-15-2", ((TextView) activity.findViewById(R.id.team1SecondBowler)).getText().toString());
+		assertEquals("Mills  4-0-15-2", ((TextView) activity.findViewById(R.id.team1TopBowler)).getText().toString());
+		assertEquals("Nathan McCullum  3-0-17-2", ((TextView) activity.findViewById(R.id.team1SecondBowler)).getText().toString());
 		
 		assertEquals("New Zealand win by 10 wickets", ((TextView) activity.findViewById(R.id.winningTeamLabel)).getText().toString());
-		
 		
 //		activity.runOnUiThread(new Runnable() {
 //			public void run() {
@@ -98,7 +97,7 @@ public class GameOverTest extends TestBase<GameOver> {
 		assertTrue(file.exists());
 		
 		String ret = Storage.getFileAsString("myfile.xml");  
-		assertEquals(63624, ret.length());
+		assertEquals(63583, ret.length());
 	}
 	
 	@Override

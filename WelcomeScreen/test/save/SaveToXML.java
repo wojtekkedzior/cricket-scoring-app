@@ -40,7 +40,7 @@ public class SaveToXML {
 		
 		String output = xml.getOutput();
 //		System.err.println(output.length());
-		assertEquals(63624, output.length());
+		assertEquals(63583, output.length());
 	}
 	
 	@Test
@@ -57,7 +57,7 @@ public class SaveToXML {
 		
 //		System.err.println(output.length());
 //		System.err.println(output);
-		assertEquals(63624, output.length());
+		assertEquals(63583, output.length());
 	}
 	
 	
